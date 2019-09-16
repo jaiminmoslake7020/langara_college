@@ -19,5 +19,3 @@ difference = totalExp-totalWages;
 //let answer = document.getElementById("answer"); OLD SCHOOL WRONG WAY
 //document.getElementById("answer").innerHTML = `The amount Jason has to get from his parents is $${difference} `; OLD SCHOOL
 ans.innerHTML = `The amount Jason has to get from his parents is $${difference} `; // this is new way 
-
-ansLi.innerHTML = `The amount Jason has to get from his par JAIMIN MOSLAKE jsvgysf ajehudfgav   $${difference} `; // this is new way 
