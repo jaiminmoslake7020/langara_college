@@ -1,0 +1,57 @@
+body{
+    margin: 0px;
+}
+
+header{
+    height: 150px;
+    background-color: orange;
+    color: white;
+    font-size: 2rem;
+}
+
+main{
+    height: 350px;
+    background-color: #d22bff;
+    color: white;
+    font-size: 2rem;
+}
+
+footer{
+    height: 150px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 2rem;
+    padding: 5px;
+}
+
+#logo{
+    /*display: inline-block;*/
+    height: 150px;
+    width: 150px;
+    background-color: aqua;
+    float: left;
+}
+
+nav{
+    float: right;
+    height: 75px;
+    width: 68%;
+    /*display: inline-block;*/
+    background-color: blue;
+    vertical-align: top;
+    padding-left: 5px;
+}
+
+aside{
+    width: 25%;
+    background-color: cornflowerblue;
+    height: 100%;
+    float: left;
+}
+
+#mainContent{
+    float: left;
+    width: 75%;
+    height: 100%;
+    background: lightblue;
+}

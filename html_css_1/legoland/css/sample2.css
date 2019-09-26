@@ -1,0 +1,39 @@
+body{
+    margin: 0px;
+}
+
+header{
+    height: 150px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 2rem;
+    padding: 5px;
+     margin: 10px;
+
+
+
+
+    border: 5px solid black;
+
+    border-width: 10px;
+    border-style: dashed;
+    border-color: red;
+
+}
+
+main{
+    /*height: 350px;*/
+    min-height: 350px;
+    background-color: #e20071;
+    color: white;
+    font-size: 2rem;
+    padding: 5px;
+}
+
+footer{
+    height: 150px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 2rem;
+    padding: 5px;
+}
