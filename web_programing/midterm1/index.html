@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wedding Planner</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" >
+    <script type="application/javascript" src="js/main.js" defer ></script>
+</head>
+<body>
+    <div class="main-div" >
+        <!--   TITLE DIV     -->
+        <div class="title-div" >
+            <h1>Wedding Planner</h1>
+        </div>
+
+        <!--    INPUTS DIVS    -->
+        <div id="default-info-report-div" class="default-info-report-div info-report-div">
+            <div class="column-containers">
+                <div class="column column1">
+                    <div class=" input-item  " >
+                        <label for="hId_weddingDate">Wedding Date</label>
+                        <input type="date" id="hId_weddingDate"  value="2019-12-28" />
+                        <p class="error-info-text" ></p>
+                    </div>
+                    <div class=" input-item  " >
+                        <label for="hId_dressPrice">Dress Price</label>
+                        <input type="text" id="hId_dressPrice" value="6500" />
+                        <p class="error-info-text" ></p>
+                    </div>
+                    <div class=" input-item  " >
+                        <label for="hId_bridesMaidExpenses">Bride's Main Expenses</label>
+                        <input type="text" id="hId_bridesMaidExpenses" value="2500" />
+                        <p class="error-info-text" ></p>
+                    </div>
+                    <div class=" input-item  " >
+                        <label for="hId_peopleInvited">Number of People Invited</label>
+                        <input type="text" id="hId_peopleInvited" value="50"   />
+                        <p class="error-info-text" ></p>
+                    </div>
+                    <div class=" input-item  " >
+                        <label for="hId_flowersCost">Flowers And Decorations</label>
+                        <input type="text" id="hId_flowersCost" value="2800" />
+                        <p class="error-info-text" ></p>
+                    </div>
+                    <div class=" input-item  " >
+                        <label for="hId_photographerCost">Photographer's Cost</label>
+                        <input type="text" id="hId_photographerCost" value="7500" />
+                        <p class="error-info-text" ></p>
+                    </div>
+                    <div class=" input-item  " >
+                        <label for="hId_miscCost">Miscellaneous Cost</label>
+                        <input type="text" id="hId_miscCost" value="3500" />
+                        <p class="error-info-text" ></p>
+                    </div>
+                </div>
+                <div class="column column2">
+                    <div class=" input-item  " >
+                        <label for="hId_budget">Budget</label>
+                        <input type="text" id="hId_budget" value="50000" />
+                        <p class="error-info-text" ></p>
+                    </div>
+                    <div class=" input-item  " >
+                        <label for="hId_receptionHallPrice">Reception Hall Price</label>
+                        <input type="text" id="hId_receptionHallPrice"  value="13000" />
+                        <p class="error-info-text" ></p>
+                    </div>
+                    <div class=" input-item  " >
+                        <label for="hId_perPlateExpense">Per Plate Expense</label>
+                        <input type="text" id="hId_perPlateExpense" value="18"  />
+                        <p class="error-info-text" ></p>
+                    </div>
+                    <div class=" input-item  " >
+                        <label for="hId_openBars">Open Bar inpropotion to dinner price ( Input * Per Plate Price)</label>
+                        <input type="text" id="hId_openBars" value="1.5" />
+                        <p class="error-info-text" ></p>
+                    </div>
+                    <div class=" input-item  " >
+                        <label for="hId_bandCost">Band Cost</label>
+                        <input type="text" id="hId_bandCost" value="1500" />
+                        <p class="error-info-text" ></p>
+                    </div>
+                    <div class=" input-item  " >
+                        <label for="hId_limoCost">Limo Cost</label>
+                        <input type="text" id="hId_limoCost" value="800" />
+                        <p class="error-info-text" ></p>
+                    </div>
+                </div>
+            </div>
+            <div class="submit">
+                <button id="submit">Get Estimates</button>
+                <p id="wholeFormError" class=" error-info-text" ></p>
+            </div>
+        </div>
+
+        <!--  RESULT DIVE      -->
+        <div id="resultsDiv"  class="dynamic-info-div">
+            <h1>Price Estimation Result</h1>
+            <p id="dynamicInfoDiv" ></p>
+            <h1>Detailed Report</h1>
+            <div class="report-container">
+                <div class="report-column label-column">
+                    <p>Wedding Date</p>
+                    <p>Budget</p>
+                    <p>Dress Price</p>
+                    <p>Reception Hall Price</p>
+                    <p>Bride's Maid Expenses</p>
+                    <p>Dinning Expense including bar with tax</p>
+                    <p>Flowers And Decoration Expenses</p>
+                    <p>Photographers Bill</p>
+                    <p>Limo Bill</p>
+                    <p>Misc Cost</p>
+                    <hr>
+                    <p class="fwb" >Total Wdding Cost</p>
+                    <hr>
+                    <p class="fs20 fwb" >Remaing for gifts</p>
+                </div>
+                <div class="report-column value-column">
+                    <p id="p_w_date"></p>
+                    <p id="p_budget"></p>
+                    <p id="p_dressPrice"></p>
+                    <p id="p_receptionHallPrice"></p>
+                    <p id="p_brideMaidPrice" ></p>
+                    <p id="p_dinningPrice" ></p>
+                    <p id="p_flowersPrice" ></p>
+                    <p id="p_photoPrice"></p>
+                    <p id="p_limoPrice"></p>
+                    <p id="p_miscPrice"></p>
+                    <hr>
+                    <p id="p_total" class=" fwb"></p>
+                    <hr>
+                    <p id="p_remaining" class="fs20 fwb"></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
