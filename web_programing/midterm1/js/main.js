@@ -92,6 +92,7 @@ let calculateDynamically = () => {
         photographerCost = parseFloat(hId_photographerCost.value) ;
         limoCost = parseFloat(hId_limoCost.value) ;
         miscellaneousExpenses = parseFloat(hId_miscCost.value);
+
         dynamicInfoDiv.innerHTML =`Funds for gifts <b>$${getFundsRemainingForGiftsPurchase()}</b> as total expenses for planned wedding is <b>$${gettingTotalExpensesOfWedding()}</b> on wedding date <b>${weddingDate}</b>.` ;
 
         p_w_date.innerHTML = weddingDate;
