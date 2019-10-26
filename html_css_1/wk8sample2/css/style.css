@@ -1,0 +1,37 @@
+.item{
+    height: 200px;
+}
+
+.headings {
+    grid-area: red;
+    background-color: red;
+}
+
+.middle-second {
+    grid-area: green;
+    background-color: green;
+    height: 400px;
+}
+
+.middle-first-row-1{
+    grid-area: yellow;
+    background-color: yellow;
+}
+
+.middle-first-row-2 {
+    grid-area: blue;
+    background-color: blue;
+}
+
+.footer {
+    grid-area: red2;
+    background-color: red;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'red red red red red red' 'yellow yellow green green green green' 'blue blue green green green green' 'red2 red2 red2 red2 red2 red2';
+    grid-gap: 0;
+    padding: 10px;
+    width: 100%;
+}

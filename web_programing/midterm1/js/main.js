@@ -1,19 +1,20 @@
 /**
  *  INPUTS FROM THE ASSIGNMENTS
  */
-let weddingDate = "28th November 2019" ;
-let budget = 50000 ;
-let dressPrice = 6500;
-let receptionHallPrice =  2*dressPrice;
-let bridesMaidExpenses = 2500;
-let perPlateDinnerPrice = 18;
-let numberOfPeopleInvited = 50 ;
-let openBarPerPerson = 1.5*perPlateDinnerPrice;
-let flowersAndDecoration = 2800 ;
-let bandCost = 1500;
-let photographerCost = 7500;
-let limoCost = 800;
-let miscellaneousExpenses = 3500;
+let weddingDate  ;
+let budget  ;
+let dressPrice ;
+let noOfDress ;
+let receptionHallPrice ;
+let bridesMaidExpenses ;
+let perPlateDinnerPrice ;
+let numberOfPeopleInvited  ;
+let openBarPerPerson ;
+let flowersAndDecoration  ;
+let bandCost ;
+let photographerCost ;
+let limoCost ;
+let miscellaneousExpenses ;
 
 /**
  * Functions to determine some of the inputs defined in  the file
@@ -32,7 +33,7 @@ let totalAmountWithTaxOnDinning = () => {
 };
 
 let gettingTotalExpensesOfWedding = () => {
-    return (dressPrice + receptionHallPrice + bridesMaidExpenses + totalAmountWithTaxOnDinning() + flowersAndDecoration + bandCost + photographerCost + limoCost + miscellaneousExpenses).toFixed(2) ;
+    return ( (noOfDress*dressPrice) + receptionHallPrice + bridesMaidExpenses + totalAmountWithTaxOnDinning() + flowersAndDecoration + bandCost + photographerCost + limoCost + miscellaneousExpenses).toFixed(2) ;
 };
 
 let getFundsRemainingForGiftsPurchase = () => {
@@ -75,17 +76,19 @@ let validateInfo = () => {
     return allIsWell;
 };
 
+
 //*  Function to be called
 let calculateDynamically = () => {
     // simple validation
     if( validateInfo() ){
         weddingDate = hId_weddingDate.value;
         budget = parseFloat(hId_budget.value) ;
+        noOfDress = parseInt(hId_noOfDress.value);
         dressPrice = parseFloat(hId_dressPrice.value);
         receptionHallPrice =  parseFloat(hId_receptionHallPrice.value);
         bridesMaidExpenses = parseFloat(hId_bridesMaidExpenses.value);
         perPlateDinnerPrice = parseFloat(hId_perPlateExpense.value);
-        numberOfPeopleInvited = parseFloat(hId_peopleInvited.value) ;
+        numberOfPeopleInvited = parseInt(hId_peopleInvited.value) ;
         openBarPerPerson = parseFloat(hId_openBars.value)*( perPlateDinnerPrice );
         flowersAndDecoration = parseFloat(hId_flowersCost.value) ;
         bandCost = parseFloat(hId_bandCost.value) ;

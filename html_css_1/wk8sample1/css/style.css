@@ -1,0 +1,36 @@
+.item{
+    height: 200px;
+}
+
+.headings {
+    grid-area: red;
+    background-color: red;
+}
+
+.middle-first {
+    grid-area: green;
+    background-color: green;
+}
+
+.middle-second {
+    grid-area: yellow;
+    background-color: yellow;
+}
+
+.middle-third {
+    grid-area: blue;
+    background-color: blue;
+}
+
+.footer {
+    grid-area: red2;
+    background-color: red;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'red red red red red red' 'yellow yellow blue blue green green' 'red2 red2 red2 red2 red2 red2';
+    grid-gap: 10px;
+    padding: 10px;
+    width: 100%;
+}

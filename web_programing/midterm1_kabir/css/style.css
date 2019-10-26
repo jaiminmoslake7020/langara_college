@@ -1,0 +1,104 @@
+/**
+ * Used my one of the previous app created by me in year 2013 to take this valeues to speed up things
+ * Here I have used many things from this page to speed up things
+ * http://jaiminmoslake7020.github.io/FirstTheme/
+ */
+body{
+    background: #2C2D2F;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #f7f2f5;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-div{
+    margin: 0px;
+    padding: 0px 5%;
+}
+
+.title-div{
+    text-align: center;
+    padding: 20px;
+}
+
+/*  INPUTS AND COLUMNS GRID */
+.column-containers{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0px 10px;
+}
+
+.input-item{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 5px 10px ;
+}
+
+.input-item label{
+    width: 200px;
+    margin-left: 20px;
+}
+
+.input-item input{
+    width: 100px;
+}
+
+.error-info-text{
+    color: red;
+    margin: 0px 0px 0px 20px;
+    grid-column-start: span 2;
+    display: none;
+}
+
+/*SUMBIMT BUTTON*/
+.submit{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: right;
+    margin-right: 130px;
+}
+
+.submit button{
+    padding: 10px;
+    font-weight:bold ;
+    border-radius: 5px;
+    background: steelblue;
+    color: white;
+    border: 1px solid #426c9a;
+}
+
+
+/*RESULT DIVE*/
+.dynamic-info-div{
+    padding: 20px;
+}
+
+#dynamicInfoDiv{
+    color: green;
+    font-size: 20px;
+}
+
+#resultsDiv{
+    display: none;
+}
+
+.report-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0px 10px;
+}
+
+#p_remaining{
+    text-align: right;
+}
+
+.fwb{
+    font-weight: bold;
+}
+
+.fs20{
+    font-size: 20px;
+}
