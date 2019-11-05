@@ -1,0 +1,59 @@
+.home-page{
+    display: grid;
+    grid-template-areas: 'header-menu header-menu header-menu'
+                         'blank-block blank-block login-div '
+                         'blank-block blank-block register-div'
+                         'footer-menu footer-menu footer-menu' ;
+    grid-gap: 10px;
+}
+
+.header{
+    grid-area: header-menu;
+}
+
+.login-form{
+    grid-area: login-div;
+}
+
+.register-form{
+    grid-area: register-div;
+}
+
+.footer{
+    grid-area: footer-menu;
+
+}
+
+
+
+
+.home-page .header .header-grid-container{
+    display: grid;
+    grid-template-areas: 'logo-menu links-menu';
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.home-page .header .header-grid-container .logo{
+    grid-area: logo-menu;
+}
+
+.home-page .header .header-grid-container .links{
+    grid-area: links-menu;
+}
+
+.logo-content{
+    font-weight: bold;
+    font-size: 24px;
+    color: green;
+    padding: 10px 0px 0px 30px;
+}
+
+.links-content{
+    text-align: right;
+    padding: 10px 30px 0px 0px;
+}
+
+
+
+

@@ -1,0 +1,25 @@
+/*
+https://unsplash.com/photos/NeTPASr-bmQ
+https://unsplash.com/photos/MJSFNZ8BAXw
+https://unsplash.com/photos/8lnbXtxFGZw
+https://unsplash.com/photos/OApHds2yEGQ
+https://unsplash.com/photos/0sPFjdcRhko
+*/
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url("../images/ibrahim-rifath-OApHds2yEGQ-unsplash.jpg");
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.canvas{
+    position: fixed;
+    top:0px;
+    background-color:white;
+    opacity: 0.2;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1000;
+}

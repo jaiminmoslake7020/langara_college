@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Split</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="packages/fontawesome-free-5.11.2-web/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/helper.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/forms/login-form.css">
+    <link rel="stylesheet" href="css/forms/register-form.css">
+    <script type="application/javascript" src="js/main.js" defer ></script>
+</head>
+<body>
+    <div class="canvas" ></div>
+    <div class="content-wrapper home-page ">
+        <div class="header">
+            <div class="header-grid-container">
+                <div class="logo">
+                    <div class="logo-content">
+                        SimpleSplit
+                    </div>
+                </div>
+                <div class="links">
+                    <div class="links-content">
+                        <button class=" btn displayClicker" data-show="#login-form" data-hide="#register-form,#loginForm" id="loginForm"  ><i class="fa fa-sign-in-alt "></i>&nbsp;Login</button>
+                        <button class=" btn displayClicker" data-show="#register-form" data-hide="#login-form,#registerForm" id="registerForm" ><i class="fa fa-user-alt"></i>&nbsp;Register</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="login-form" class="login-form">
+            <form class="login" >
+                <p class="box-title" >Login</p>
+                <div class="input-block">
+                    <label for="login-form_username" class="input-label" >Username</label>
+                    <input id="login-form_username" name="login-form[username]" type="text" class="input-el">
+                    <p class="info-text dnone " ></p>
+                </div>
+                <div class="input-block">
+                    <label for="login-form_password" class="input-label" >Password</label>
+                    <input id="login-form_password" name="login-form[password]" type="text" class="input-el">
+                    <p class="info-text dnone " ></p>
+                </div>
+                <div class="input-block">
+                    <input id="login-form_remember_me" name="login-form[remember_me]" type="checkbox" class="input-el">
+                    <label for="login-form_remember_me" class="input-label checbox-label" >Remember Me</label>
+                    <p class="info-text dnone " ></p>
+                </div>
+                <div class="input-block btn-container"><a class="form-submit-link btn btn-login " >Submit</a></div>
+            </form>
+        </div>
+        <div id="register-form" class="register-form">
+            <form class="register" >
+                <p class="box-title" >Register</p>
+                <div class="input-block">
+                    <label for="register-first_name" class="input-label" >First Name</label>
+                    <input id="register-first_name" name="register-form[first_name]" type="text" class="input-el">
+                    <p class="info-text dnone " ></p>
+                </div>
+                <div class="input-block">
+                    <label for="register-last_name" class="input-label" >Last Name</label>
+                    <input id="register-last_name" name="register-form[last_name]" type="text" class="input-el">
+                    <p class="info-text dnone " ></p>
+                </div>
+                <div class="input-block">
+                    <label for="register-form_email" class="input-label" >Email Address</label>
+                    <input id="register-form_email" name="register-form[email]" type="text" class="input-el">
+                    <p class="info-text dnone " ></p>
+                </div>
+                <div class="input-block">
+                    <label for="register-form_confirm_email" class="input-label" >Confirm Email Address</label>
+                    <input id="register-form_confirm_email" name="register-form[form_confirm_email]" type="text" class="input-el">
+                    <p class="info-text dnone " ></p>
+                </div>
+                <div class="input-block">
+                    <label for="register-form_username" class="input-label" >Username</label>
+                    <input id="register-form_username" name="register-form[username]" type="text" class="input-el">
+                    <p class="info-text dnone " ></p>
+                </div>
+                <div class="input-block">
+                    <label for="register-form_password" class="input-label" >Password</label>
+                    <input id="register-form_password" name="register-form[password]" type="text" class="input-el">
+                    <p class="info-text dnone " ></p>
+                </div>
+                <div class="input-block">
+                    <label for="register-form_confirm_password" class="input-label" >Confirm Password</label>
+                    <input id="register-form_confirm_password" name="register-form[confirm_password]" type="text" class="input-el">
+                    <p class="info-text dnone " ></p>
+                </div>
+                <div class="input-block">
+                    <label for="register-form_male" class="input-label checbox-label" >Gender&nbsp;&nbsp;</label>
+                    <input id="register-form_male" name="register-form[gender]" type="radio" class="input-el">
+                    <label for="register-form_male" class="input-label checbox-label" >Male&nbsp;&nbsp;</label>
+                    <input id="register-form_female" name="register-form[gender]" type="radio" class="input-el">
+                    <label for="register-form_female" class="input-label checbox-label" >Female&nbsp;&nbsp;</label>
+                    <input id="register-form_other" name="register-form[gender]" type="radio" class="input-el">
+                    <label for="register-form_other" class="input-label checbox-label" >Other&nbsp;&nbsp;</label>
+                    <p class="info-text dnone " ></p>
+                </div>
+                <div class="input-block btn-container"><a class="form-submit-link btn btn-login " >Submit</a></div>
+            </form>
+        </div>
+        <div class="footer"><h1>FOOTER</h1></div>
+    </div>
+
+</body>
+</html>

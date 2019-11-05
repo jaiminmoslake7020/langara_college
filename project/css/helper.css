@@ -1,0 +1,19 @@
+/**
+Here there will be CSS style shortcuts which helps to be more productive while designing
+*/
+
+.dnone{
+    display: none;
+}
+
+.dblock{
+    display: block;
+}
+
+.box-title{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+

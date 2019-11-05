@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Week 4 - Examples</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/main.js" defer></script>
+    </head>
+    <body>
+        <!-- header.headings>nav.navigation>ul>li.items.item$*5>a:link -->
+        <header class="headings">
+            <nav class="navigation">
+                <ul>
+                    <li class="items item1"><a href="#contDiv1">Colour Picker</a></li>
+                    <li class="items item2"><a href="#contDiv2">Input Box</a></li>
+                    <li class="items item3"><a href="#contDiv3">Checkbox</a></li>
+                    <li class="items item4"><a href="#contDiv4">Iteration</a></li>
+                    <li class="items item5"><a href="#contDiv5">Calculator</a></li>
+                    <li class="items item6"><a href="#contDiv6">Country Look Up</a></li>
+                    <li class="items item7"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- main.content>div.sec$*3>lorem15  -->
+        <main class="content">
+            <h1>Code Vault</h1>
+
+            <p class="bmContainer"><a id="contDiv1">&nbsp;</a></p>
+            <div class="sec sec1" id="sec2" >
+                <h2>Sample Code for a Colour Picker</h2>
+                <input type="color" name="box1bgColor" id="box1bgColor">
+                <button id="box1">Click Me</button>
+            </div>
+
+            <p class="bmContainer"><a id="contDiv2">&nbsp;</a></p>
+            <div class="sec sec2">
+                <h2>Sample Code for an Input Box</h2>
+                <label for="box2txtField">Please Enter your Email Address:</label>
+                <input type="text" id="box2txtField">
+                <button id="box2">Click Me</button>
+                <p id="output2"></p>
+            </div>
+
+            <p class="bmContainer"><a id="contDiv3">&nbsp;</a></p>
+            <div class="sec sec3">
+                <h2>Sample Code for a Check Box using Conditional Logic</h2>
+                <label for="box3chkBox">Would you like to join our mailing list?</label>
+                <input type="checkbox" name="box3chkBox" id="box3chkBox">                
+                <button id="box3">Click Me</button><br><br>
+                <p id="output3"></p>
+            </div>
+
+            <p class="bmContainer"><a id="contDiv4">&nbsp;</a></p>
+            <div class="sec sec4">
+                <h2>Sample Code for Iteration Logic</h2>
+                <label for="box4txtField">Please enter a grade</label>
+                <input type="input" name="box4txtField" id="box4txtField">
+                <button id="box4">Click Me</button><br><br>
+                <p id="output4"></p>
+            </div>
+
+
+
+            <p class="bmContainer"><a id="contDiv5">&nbsp;</a></p>
+            <div class="sec sec5">
+                <h2>Sample Code for Calculator</h2>
+                <label for="box5FirstNumber">Please enter a first value</label>
+                <input type="number" id="box5FirstNumber">
+                <label for="box5SecondNumber">Please enter a second value</label>
+                <input type="number" id="box5SecondNumber">
+                <button id="box5Add">Add(+)</button>
+                <button id="box5Sub">Subtract(-)</button>
+                <button id="box5Mul">Multiply(x)</button>
+                <button id="box5Div">Divide(/)</button>
+                <p id="output5"></p>
+            </div>
+
+
+            <p class="bmContainer"><a id="contDiv6">&nbsp;</a></p>
+            <div class="sec sec6">
+                <h2>Sample Code for Country Look up</h2>
+                <label for="box6txtField">Please enter a two character abbrevation for country</label>
+                <input type="input" name="box6txtField" id="box6txtField">
+                <button id="box6">Search</button><br><br>
+                <p id="output6"></p>
+            </div>
+
+        </main>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+.btn{
+    display: inline-block;
+    padding: 7px 15px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #8e8e8e;
+    color: #111111;
+    border-radius: 3px;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.btn.btn-link{
+    text-decoration: underline;
+}
+
+.btn:focus{
+    outline: none;
+    box-shadow:2px 2px 1px 0px rgba(50, 50, 50, 0.75);
+}
+
+.btn:hover{
+    outline: none;
+    box-shadow:2px 2px 1px 0px rgba(50, 50, 50, 0.75);
+}

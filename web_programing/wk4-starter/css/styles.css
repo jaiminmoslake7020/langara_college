@@ -1,4 +1,5 @@
 .headings {
+    /* {0,0,1,0} */
     /* overflow: hidden; */
     background-color: #aaa;
     position: fixed;
@@ -12,6 +13,8 @@
     min-height: 50px;
     margin: 0;
 }
+
+secTe
 
 .content {
     padding-top: 50px;
@@ -78,4 +81,20 @@ button {
 
 div {
     min-height: 500px;
+}
+
+
+
+
+
+.secTest{
+    background-color: black;
+}
+
+.secTest{
+    background-color: red;
+}
+
+.secTest{
+    background-color: blue;
 }

@@ -30,8 +30,19 @@
 
 .grid-container {
     display: grid;
-    grid-template-areas: 'red red red red red red' 'yellow yellow green green green green' 'blue blue green green green green' 'red2 red2 red2 red2 red2 red2';
+    grid-template-areas: 'red red red red red red'
+                         'yellow yellow green green green green'
+                         'blue blue green green green green'
+                         'red2 red2 red2 red2 red2 red2';
     grid-gap: 0;
     padding: 10px;
     width: 100%;
+}
+
+.item{
+    display: flex;
+}
+
+.headings{
+    flex-direction: column-reverse;
 }
