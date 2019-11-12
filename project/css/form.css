@@ -4,12 +4,20 @@ form{
 
 .input-block{
     display: block;
-    width: 90%;
+    width: 100%;
     font-size: 14px;
-    margin: 0px 0px 20px 0px;
+    margin: 0 -15px 20px -15px;
 }
 
-input, select{
+form.no-label label{
+    display: none;
+}
+
+form.no-label label.show-me{
+    display: initial;
+}
+
+input, select, textarea{
     display: block;
     width: 100%;
     padding: 10px 15px;
@@ -34,3 +42,22 @@ input[type="checkbox"], input[type="radio"]{
 label.input-label.checbox-label{
     display: inline-block;
 }
+
+
+
+
+
+
+
+
+
+
+
+.login-form{
+    margin: 50px 10px;
+}
+
+.register-form{
+    margin: 50px 10px;
+}
+

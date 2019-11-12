@@ -1,52 +1,41 @@
-.home-page{
+.grid-manager{
     display: grid;
-    grid-template-areas: 'header-menu header-menu header-menu'
-                         'blank-block blank-block login-div '
-                         'blank-block blank-block register-div'
-                         'footer-menu footer-menu footer-menu' ;
+    grid-template-areas: 'header-area'
+                         'content-area'
+                         'footer-area' ;
     grid-gap: 10px;
 }
 
 .header{
-    grid-area: header-menu;
+    grid-area: header-area;
+    background-color: rgb(255,113,44);
 }
 
-.login-form{
-    grid-area: login-div;
-}
-
-.register-form{
-    grid-area: register-div;
-}
-
-.footer{
-    grid-area: footer-menu;
-
-}
-
-
-
-
-.home-page .header .header-grid-container{
+.header .header-grid-container{
     display: grid;
-    grid-template-areas: 'logo-menu links-menu';
+    grid-template-areas: 'logo-area links-area';
     grid-gap: 10px;
     padding: 10px;
 }
 
-.home-page .header .header-grid-container .logo{
-    grid-area: logo-menu;
+.header .header-grid-container .logo{
+    grid-area: logo-area;
 }
 
-.home-page .header .header-grid-container .links{
-    grid-area: links-menu;
+.header .header-grid-container .links{
+    grid-area: links-area;
 }
 
 .logo-content{
     font-weight: bold;
     font-size: 24px;
-    color: green;
+    color: rgb(0,133,117);
     padding: 10px 0px 0px 30px;
+}
+
+.logo-content a img{
+    width: 204.8px;
+    height: 28px;
 }
 
 .links-content{
@@ -54,6 +43,137 @@
     padding: 10px 30px 0px 0px;
 }
 
+.footer{
+    grid-area: footer-area;
+    background-color: rgb(255,113,44);
+}
+
+.content-wrapper{
+    grid-area: content-area;
+    min-height: 95vh;
+}
 
 
 
+/*
+INDEX PAGE
+*/
+
+
+.index-page .content-wrapper{
+    display: grid;
+    grid-template-areas: 'blank-block login-div '
+    'blank-block register-div';
+    grid-gap: 10px;
+}
+
+.blank-div{
+    grid-area: blank-block;
+    width: 50vw;
+}
+
+.login-form{
+    grid-area: login-div;
+    width: 30vw;
+}
+
+.register-form{
+    grid-area: register-div;
+    width: 30vw;
+}
+
+
+
+
+
+/*
+PAGES/HOME PAGE
+*/
+
+.home-page .content-wrapper{
+    width: 90%;
+    margin: auto;
+    /*background-color: white;*/
+
+    display: grid;
+    grid-template-areas: 'da'
+                        'fa';
+    grid-gap: 10px;
+
+}
+
+.dashboard-view{
+    grid-area: da;
+    display: grid;
+    grid-template-areas: 'fl-a el-a el-a el-a gl-a';
+    grid-gap: 10px;
+}
+
+.form-view{
+    grid-area: fa;
+}
+
+.list-container{
+    padding: 15px;
+    grid-gap: 10px;
+    display: grid;
+    background-color: rgb(106,156,147);
+    height: fit-content;
+}
+
+.friend-list{
+    grid-area: fl-a;
+    grid-template-areas: 'bc-a'
+                          'lcc-a'  ;
+}
+
+.expense-list{
+    grid-area: el-a;
+    grid-template-areas: 'bc-a'
+    'lcc-a'  ;
+}
+
+.group-list{
+    grid-area: gl-a;
+    grid-template-areas: 'bc-a'
+    'lcc-a'  ;
+}
+
+.list-container .btn-container{
+    grid-area: bc-a;
+}
+
+.list-container .list-container-child{
+    grid-area: lcc-a;
+}
+
+.item{
+    width: 100%;
+    display: grid;
+    grid-template-areas: 'la la la aa';
+    background-color: rgb(0,133,117);
+    color: white;
+    align-items: center;
+}
+
+.lable{
+    grid-area: la;
+}
+
+.lable-title{
+    margin: 15px;
+}
+
+.actions{
+    grid-area: aa;
+    text-align: right;
+}
+
+.actions-container{
+    margin: 15px;
+}
+
+.actions-container .btn{
+    background-color:rgb(105,93,70);
+    padding: 5px 8px;
+}
