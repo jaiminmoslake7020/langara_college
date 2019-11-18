@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Split</title>
+    <link rel="stylesheet" href="../packages/fontawesome-free-5.11.2-web/css/all.css">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/helper.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/button.css">
+    
+    <script type="application/javascript" src="../js/main.js" defer ></script>
+    <script type="application/javascript" src="../js/helpers/htmlEl.js" defer ></script>
+    <script type="application/javascript" src="../js/helpers/show-hide.js" defer ></script>
+    <script type="application/javascript" src="../js/helpers/string.js" defer ></script>
+    <script type="application/javascript" src="../js/helpers/type.js" defer ></script>
+
+    <script type="application/javascript" src="../js/impl/user.js" defer ></script>
+     <script type="application/javascript" src="../js/impl/friend.js" defer ></script>
+    <script type="application/javascript" src="../js/impl/group.js" defer ></script>
+    <script type="application/javascript" src="../js/impl/expense.js" defer ></script>
+
+  
+</head>
+<body>
+<div class="grid-manager home-page " >
+    <div class="header">
+        <div class="header-grid-container">
+            <div class="logo">
+                <div class="logo-content">
+                    <a href="../index.html"><img alt="logo simple split" src="../images/logo/logo_white_large.png"></a>
+                </div>
+            </div>
+            <div class="links">
+                <div class="links-content">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=" content-wrapper  ">
+        <div id="dashboard-view" class="dashboard-view" data-display="grid" >
+            <div class="friend-list list-container ">
+                <div class="btn-container">
+                    <button class="btn displayClicker  "
+                            data-show="#form-view,#add-friend-form"
+                            data-hide="#dashboard-view"
+                    >Add Friend</button>
+                </div>
+                <div class=" list-container-child  friend-list-container">
+                    <div class=" item friend-item ">
+                        <div class=" lable ">
+                            <p class=" lable-title " >Jaimin Pandya</p>
+                        </div>
+                        <div class=" actions ">
+                            <div class=" actions-container ">
+                                <button class=" btn " title="Edit Friend" ><i class=" fas fa-pencil-alt "></i></button>
+                                <button class=" btn " title="Link to Groups" ><i class=" fas fa-link "></i></button>
+                                <button class=" btn " title="Settle Balance" ><i class=" fas fa-sliders-h "></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="expense-list list-container ">
+                <div class="btn-container">
+                    <button class="btn   " >Add An Expense</button>
+                </div>
+                <div class=" list-container-child  expense-list-container">
+                    <div class=" item group-item ">
+                        <div class=" lable ">
+                            <p class=" lable-title " >Jaimin Pandya</p>
+                        </div>
+                        <div class=" actions ">
+                            <div class=" actions-container ">
+                                <button class=" btn " ><i class=" fas fa-pencil-alt "></i></button>
+                                <button class=" btn " ><i class=" fas fa-pencil-alt "></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group-list list-container ">
+                <div class="btn-container">
+                    <button class="btn   " >Create Group</button>
+                </div>
+                <div class=" list-container-child  group-list-container">
+                    <div class=" item group-item ">
+                        <div class=" lable ">
+                            <p class=" lable-title " >Jaimin Pandya</p>
+                        </div>
+                        <div class=" actions ">
+                            <div class=" actions-container ">
+                                <button class=" btn " ><i class=" fas fa-pencil-alt "></i></button>
+                                <button class=" btn " ><i class=" fas fa-pencil-alt "></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="form-view" class="form-view dnone " data-display="grid" >
+            <div class="blnk-area1"></div>
+            <div class="form-area">
+                <div id="add-friend-form" class="form-box add-friend-form dnone">
+                        <div class=" box add-friend-form-box ">
+                            <div class=" box-heading ">
+                                <p class="box-title" >Add Friend</p>
+                            </div>
+                            <div class="box-content">
+                                <form class="login no-label " >
+                                    <div class="input-block ">
+                                        <label for="add-friend-form_full_name" class="input-label" >Full Name</label>
+                                        <input placeholder="Full Name" id="add-friend-form_full_name" name="add-friend-form[full_name]" type="text" class="input-el">
+                                        <p class="info-text dnone " ></p>
+                                    </div>
+                                    <div class="input-block">
+                                        <label for="add-friend-form_email_address" class="input-label" >Email Address</label>
+                                        <input placeholder="Email Address" id="add-friend-form_email_address" name="add-friend-form[email_address]" type="text" class="input-el">
+                                        <p class="info-text dnone " ></p>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class=" box-footer ">
+                                <div class="btn-container">
+                                
+                                        <button class="btn displayClicker left-align-button  "
+                                        data-hide="#form-view,#add-friend-form"
+                                        data-show="#dashboard-view"
+                                >Cancel</button>
+                                    <a data-form="friend-form" class="form-submit-link btn btn-login " >Add Friend</a>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="create-group-form" class="form-box create-group-form dnone">
+                        <div class=" box create-group-form-box  ">
+                            <div class=" box-heading ">
+                                <p class="box-title" >Create Group</p>
+                            </div>
+                            <div class="box-content">
+                                <form class="register no-label " >
+                                    <div class="input-block">
+                                        <label for="create-group-group_name" class="input-label" >Group Name</label>
+                                        <input placeholder="Group Name" id="create-group-group_name" name="create-group-form[first_name]" type="text" class="input-el">
+                                        <p class="info-text dnone " ></p>
+                                    </div>
+                                    <div class="input-block">
+                                        <label for="create-group-group_description" class="input-label" >Group Description</label>
+                                        <textarea placeholder="Group Description" id="create-group-group_description" name="create-group-form[last_name]" type="text" class="input-el"></textarea>
+                                        <p class="info-text dnone " ></p>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="box-footer">
+                                <div class="btn-container"><a class="form-submit-link btn btn-login " >Create Group</a></div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="blnk-area2"></div>
+        </div>
+
+    </div>
+    <div class="footer"><p class="c3" style="text-align: center;" >&copy;&nbsp;Simple Split 2019</p></div>
+</div>
+
+
+    <script id="friend-item-template" type="application/xhtml+xml">
+        <div class=" item friend-item " data-identifier="" >
+            <div class=" lable ">
+                <p class=" lable-title " ></p>
+            </div>
+            <div class=" actions ">
+                <div class=" actions-container ">
+                    <button class=" btn " title="Edit Friend" ><i class=" fas fa-pencil-alt "></i></button>
+                    <button class=" btn " title="Link to Groups" ><i class=" fas fa-link "></i></button>
+                    <button class=" btn " title="Settle Balance" ><i class=" fas fa-sliders-h "></i></button>
+                </div>
+            </div>
+        </div>
+    </script>
+
+
+
+</body>
+</html>

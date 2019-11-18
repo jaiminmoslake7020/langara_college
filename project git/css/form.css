@@ -1,0 +1,63 @@
+form{
+    background-color: transparent;
+}
+
+.input-block{
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    margin: 0 -15px 20px -15px;
+}
+
+form.no-label label{
+    display: none;
+}
+
+form.no-label label.show-me{
+    display: initial;
+}
+
+input, select, textarea{
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #333333;
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid #3b3b3b;
+}
+
+label.input-label{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="checkbox"], input[type="radio"]{
+    display: inline-block;
+    width: auto;
+}
+
+label.input-label.checbox-label{
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+.login-form{
+    margin: 50px 10px;
+}
+
+.register-form{
+    margin: 50px 10px;
+}
+

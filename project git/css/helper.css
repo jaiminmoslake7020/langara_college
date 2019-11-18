@@ -1,0 +1,89 @@
+/**
+Here there will be CSS style shortcuts which helps to be more productive while designing
+*/
+
+.dnone{
+    display: none !important;
+}
+
+.dblock{
+    display: block;
+}
+
+
+.box{
+    padding: 0;
+    margin: 10px;
+    color: white;
+}
+.box-heading{
+    padding: 15px 30px;
+    background-color: rgb(0,133,117);
+}
+.box-content{
+    padding: 15px 30px;
+    background-color: rgb(106,156,147);
+}
+.box-footer{
+    padding: 15px 30px;
+    background-color: rgb(0,133,117);
+}
+
+.box-title{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.c1{
+    color: rgb(105,93,70);
+}
+.c2{
+    color: rgb(255,94,14);
+}
+.c3{
+    color: rgb(0,133,117);
+}
+.c4{
+    color: rgb(179,167,125);
+}
+.c5{
+    color: rgb(255,113,44);
+}
+.c6{
+    color: rgb(106,156,147);
+}
+.c7{
+    color: rgb(84,84,84);
+}
+.c8{
+    color: rgb(255,255,255);
+}
+
+.bc1{
+    background-color:rgb(105,93,70);
+}
+.bc2{
+    background-color:rgb(255,94,14);
+}
+.bc3{
+    background-color:rgb(0,133,117);
+}
+.bc4{
+    background-color:rgb(179,167,125);
+}
+.bc5{
+    background-color:rgb(255,113,44);
+}
+.bc6{
+    background-color:rgb(106,156,147);
+}
+.bc7{
+    background-color:rgb(84,84,84);
+}
+.bc8{
+    background-color:rgb(255,255,255);
+}
+
+
