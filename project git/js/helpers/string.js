@@ -1,4 +1,4 @@
-class stringClass{
+class StringClass{
 
     constructor( stringContent ){
         this.stringContent = stringContent;

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title> <!-- Place appropriate Title Here -->
+        <!-- Add Link to CSS file Here -->
+        <!-- Add Link to JS file Here -->
+        <link href="css/styles.css" type="text/css" rel="stylesheet" >
+        <script type="application/javascript" src="js/main.js" defer  ></script>
+    </head>
+
+    <body>
+        <div class="parent">
+            <header>
+                <h1>Midterm 2 - Practical Exam</h1>
+                <h2>Eleminate Redundancy at every Opportunity</h2>
+            </header>
+            <main class="js-tools">
+
+                <!-- Tool 1 Structure -->
+                <div class="tools tool1">
+                    <h1>Tip Calculator (10 Marks)</h1>
+                    <h2>Instructions:</h2>
+                    <ul>
+                        <li>Retrieve Bill Amount and Tip Percent From UI</li>
+                        <li>Calculate Tip</li>
+                        <li>Display Tip Back to User (rounded to 2 Decimals)</li>
+                    </ul>
+                    <p>
+                        <label for="t1billAmount">Please Enter Total Bill Amount: </label>
+                        <input type="text" id="t1billAmount">
+                    </p>
+                    <p>
+                        <label for="t1tipPercent">Please Enter the Percent Tip you would like to give (ie: enter 15 for
+                            15%): </label>
+                        <input type="text" id="t1tipPercent">
+                    </p>
+                    <button id="tool1Submit">Calculate Tip</button>
+                    <p id="too11output" class="outputStyle"  ></p>
+                </div>
+
+                <!-- Tool 2 Structure -->
+                <div class="tools tool2">
+                    <h1>Bill Splitter (15 Marks)</h1>
+                    <h2>Instructions:</h2>
+                    <ul>
+                        <li>Retrieve Bill Amount, Tip Percentage and Number of People from UI</li>
+                        <li>Calculate Tip, Total and split it</li>
+                        <li>Display Split Amount back to User (rounded to 2 Decimals)</li>
+                    </ul>
+                    <p>
+                        <label for="t2billAmount">Please Enter Total Bill Amount: </label>
+                        <input type="text" id="t2billAmount">
+                    </p>
+                    <p>
+                        <label for="t2tipPercent">Please Enter the Percent Tip you would like to give (ie: enter 15 for
+                            15%): </label>
+                        <input type="text" id="t2tipPercent">
+                    </p>
+                    <p>
+                        <label for="t2numberOfPeople">Please Enter the Number of People to Split Between: </label>
+                        <input type="text" id="t2numberOfPeople">
+                    </p>
+                    <button id="tool2Submit">Calculate Split</button>
+                    <p id="too12output" class="outputStyle"  ></p>
+                </div>
+
+                <!-- Tool 3 Structure -->
+                <div class="tools tool3">
+                    <h1>Temperature Conversion (10 Marks)</h1>
+                    <h2>Instructions:</h2>
+                    <ul>
+                        <li>Retrieve Temperature from the UI</li>
+                        <li>Convert Celsius to Fahrenheit ((temp C * 9/5) + 32)</li>
+                        <li>Convert Fahrenheit to Celsius ((temp C -32) * 5/9)</li>
+                        <li>Display Converted Temperature Back to User (rounded to 2 Decimals)</li>
+                    </ul>
+                    <p>
+                        <label for="t3temp">Please Enter the Temperature you want to Convert: </label>
+                        <input type="text" id="t3temp">
+                    </p>
+                    <button id="tool3Celsius">Convert to Celsius</button>
+                    <button id="tool3Fahrenheit">Convert to Fahrenheit</button>
+                    <p id="too13output" class="outputStyle"  ></p>
+                </div>
+
+                <!-- Tool 4 Structure -->
+                <div class="tools tool4">
+                    <h1>Load an Array of Cars (15 Marks)</h1>
+                    <h2>Instructions:</h2>
+                    <ul>
+                        <li>Retrieve a Series of Input from the UI</li>
+                        <li>Store each Item Retrieved in an Array (make sure car is not already in array)</li>
+                        <li>Display the Array Back to the User Each Time an Item is Entered</li>
+                        <li>Give the User the ability to Reset the Array</li>
+                    </ul>
+                    <p>
+                        <label for="t4car">Please Enter the Name of a Car: </label>
+                        <input type="text" id="t4car">
+                        <p id="t4carInfoText" class="rc dnone" ></p>
+                    </p>
+                    <button id="tool4AddCar">Add Car to Array</button>
+                    <button id="tool4Clear">Reset the Array</button>
+                    <p id="too14output" class="outputStyle" ></p>
+                </div>
+
+                <!-- Tool 5 Structure -->
+                <div class="tools tool5">
+                    <h1>Bonus: Pick a Random Car from the Array every time the User Clicks the button (+3 Marks)</h1>
+                    <h2>Instructions:</h2>
+                    <ul>
+                        <li>There is no User Input from UI other than Clicking the Button</li>
+                        <li>Use an Algorithm to Select One of Cars in the Previous Array</li>
+                        <li>Display the Car back to the User with Appropriate Feedback</li>
+                    </ul>
+                    <button id="tool5Submit">Select Random Car</button>
+                    <p id="too15output" class="outputStyle"  ></p>
+                </div>
+            </main>
+            <footer>
+                <div>&copy;2019 Langara College, WMDD 4820 Midterm Exam</div>
+            </footer>
+        </div>
+    </body>
+
+</html>
