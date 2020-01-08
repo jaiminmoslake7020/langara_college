@@ -1,0 +1,28 @@
+.wrapper-parent {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    height: 80vh;
+    background-color: lightcyan;
+    padding: 10px;
+}
+
+.c1-parent, .c2-parent {
+    display: grid;
+    grid-template-columns: 200px 175px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+
+label {
+    text-align: right;
+    padding-right: 5px;
+}
+
+.c1-children, .c2-children {
+    margin-top: 5px;
+}
+
+#load {
+    margin-bottom: 20px;
+}

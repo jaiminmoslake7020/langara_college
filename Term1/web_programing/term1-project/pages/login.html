@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Split</title>
+    <link rel="stylesheet" href="../packages/fontawesome-free-5.11.2-web/css/all.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="grid-manager login-page " >
+    <div class="header">
+
+        <div class="header-grid-container">
+            <div class="logo">
+                <div class="logo-content">
+                    <a href="../index.html"><img alt="logo simple split" src="../images/logo/logo_white_without_border.png"></a>
+                </div>
+            </div>
+            <div class="navigation-container" >
+                <nav class="navigation">
+                    <ul>
+                        <li class="items item3"><a href="../pages/home.html">Home</a></li>
+                        <li class="items item1"><a href="../pages/about.html">About Us</a></li>
+                        <li class="items item2"><a href="../pages/contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="links">
+                <div class="links-content">
+                    <a href="../pages/login.html" class=" btn active "  id="loginFormBtn"  ><i class="fa fa-sign-in-alt "></i>&nbsp;Login</a>
+                    <a href="../pages/register.html" class=" btn "  id="registerFormBtn" ><i class="fa fa-user-alt"></i>&nbsp;Register</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="content-wrapper  ">
+        <div class="blank-div">
+            <div class=" slide-container first login-page ">
+                <div class="img-container">
+                    <!--                https://unsplash.com/photos/lCPhGxs7pww-->
+                    <div class="img-blur-bro"></div>
+                    <img src="../images/home/first.jpeg">
+                </div>
+            </div>
+        </div>
+        <div id="login-form" class="login-form ">
+            <div class=" box login-form-box ">
+                <div class=" box-heading ">
+                    <p class="box-title" >Login</p>
+                </div>
+                <div class="box-content">
+                    <form class="login no-label " >
+                        <div class="input-block ">
+                            <label for="login-form_username" class="input-label" >Username</label>
+                            <input placeholder="Username" id="login-form_username" name="login-form[username]" type="text" class="input-el">
+                            <p class="info-text dnone " ></p>
+                        </div>
+                        <div class="input-block">
+                            <label for="login-form_password" class="input-label" >Password</label>
+                            <input placeholder="Password" id="login-form_password" name="login-form[password]" type="text" class="input-el">
+                            <p class="info-text dnone " ></p>
+                        </div>
+                        <div class="input-block">
+                            <input id="login-form_remember_me" name="login-form[remember_me]" type="checkbox" class="input-el">
+                            <label for="login-form_remember_me" class="input-label checbox-label" >Remember Me</label>
+                            <p class="info-text dnone " ></p>
+                        </div>
+                    </form>
+                </div>
+                <div class=" box-footer ">
+                    <div class="btn-container"><a class="form-submit-link btn btn-login " >Login</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"><p>&copy;&nbsp;Simple Split 2019</p></div>
+</div>
+</body>
+</html>

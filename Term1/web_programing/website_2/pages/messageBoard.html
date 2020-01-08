@@ -1,0 +1,167 @@
+<!-- QUERIES -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hobbies & Collectibles</title>
+    <script src = "../js/main.js" defer></script>
+    <link rel = "stylesheet" href = "../css/style.css">
+</head>
+<body id="messageBody" >
+    <div class="main-subject">
+        <div class="main-children main-childS1">
+                <div class="header">
+                        <!-- LOGO AND TITLE -->
+                        <div class="logo">
+                            <div class="logoContent">
+                                <div>
+                                    <img src="../images/aanchal_arora_logo.png" class="logo-1">
+                                </div>
+                                <div>
+                                    <a href="../index.html" class=" logo-link ">Hobbies Collectibles</a> 
+                                </div> 
+                            </div>
+                        </div>
+                        <!-- NAVIGATION BAR -->
+                        <div class="navCenter">
+                        <nav>
+                            <ul>
+                                <a href="../index.html" class="btn" role="button">HOME</a>
+                                <a href="../pages/aboutUs.html" class="btn" role="button">ABOUT</a>
+                                <div class="drop">
+                                <!-- DROPDOWN -->
+                                <button class="btn">GALLERY</button>
+                                    <div class="dropdown">
+                                    <li><a href="../pages/stamps.html">Stamps</a></li>
+                                    <li><a href="../pages/coins.html">Coins</a></li>
+                                    <li><a href="../pages/antiques.html">Antiques</a></li>
+                                    <li><a href="../pages/origami.html">Origami</a></li>
+                                    <li><a href="../pages/toys.html">Toys</a></li>
+                                    <li><a href="../pages/actionfigures.html">Action Figures</a></li>
+                                    </div>
+                                </div> 
+                                <a href="../pages/messageBoard.html" class="btn" role="button">QUERIES</a>
+                                <a href="../pages/event.html" class="btn" role="button">DISCOUNTS & EVENTS</a>
+                                <a href="../pages/contactUs.html" class="btn" role="button">CONTACTS</a>
+                                <a href="../pages/register.html" class="btn" role="button">REGISTER</a>
+                            </ul>           
+                        </nav>
+                        </div>
+                    </div>
+        </div>
+        <div class="main-children main-childS2">
+            <div id="outputBox">
+
+            </div>
+            <!-- QUERY FORM -->
+            <form id="formdiv">
+            <div class="container1">
+                    <h1>MESSAGE US</h1>
+               <div class="row">
+                   <div class="col-2">
+                       <label for="fname">Name</label>
+                   </div>
+                   <div class="col-3">
+                       <input type="text" placeholder="Enter your Name" id="fname" name="firstname">
+                   </div>
+               </div>
+               <div class="row">
+                   <div class="col-2">
+                       <label for="email">Email</label>
+                   </div>
+                   <div class="col-3">
+                       <input type="text" placeholder="Enter your Email Id" id="email" name="Email">
+                   </div>
+               </div>
+               <div class="row">
+                   <div class="col-2">
+                       <label for="pNumber">Phone Number</label>
+                   </div>
+                   <div class="col-3">
+                       <input type="text" placeholder="Enter your Phone Number" id="pNumber" name="number">
+                   </div>
+               </div>
+               <div class="row">
+                   <div class="col-2">
+                       <label >Interests</label>
+                    </div>
+                    <div class="col-3">
+                        <div class="row-12" >
+                            <div class="col-12">
+                                <label>
+                                    <input type="checkbox" name="interests" id="check_coins" value="coins">&nbsp;Coins $50.00
+                                </label>
+                                <div class=" do-not-show " id="check_coins_p" >50</div>
+                            </div>
+                        </div>
+                        <div class="row-12" >
+                            <div class="col-12">
+                                <label>
+                                    <input type="checkbox" name="interests" id="check_origami"  value="Origami">&nbsp;Origami $100.00
+                                </label>
+                                <div class=" do-not-show " id="check_origami_p" >100</div>
+                            </div>
+                        </div>
+                        <div class="row-12" >
+                            <div class="col-12">
+                                <label>
+                                    <input type="checkbox" name="interests" id="check_ant"  value="Antiques">&nbsp;Antiques $1500.00
+                                </label>
+                                <div class=" do-not-show " id="check_ant_p" >1500</div>
+                            </div>
+                        </div>
+                        <div class="row-12" >
+                            <div class="col-12">
+                                <label>
+                                    <input type="checkbox" name="interests" id="check_toys" value="Toys">&nbsp;Toys $500.00
+                                </label>
+                                <div class=" do-not-show " id="check_toys_p" >500</div>
+                            </div>
+                        </div>
+                        <div class="row-12" >
+                            <div class="col-12">
+                                <label>
+                                    <input type="checkbox" name="interests" id="check_af" value="Action Figures">&nbsp;Action Figures $300.00
+                                </label>
+                                <div class=" do-not-show " id="check_af_p" >300</div>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+                <div class="row">
+                        <div class="col-2">
+                            <label for="interests">Other Interests</label>
+                        </div>
+                        <div class="col-3">
+                            <textarea id="interests" name="interests" placeholder="Tell your Interests"></textarea> 
+                        </div>
+                </div>
+                <div class="row">
+                        <div class="col-2">
+                            <label for="comments">Comments </label>              
+                        </div>
+                        <div class="col-3">
+                            <textarea id="comments" name="comments" placeholder="Any Comments"></textarea> 
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                    </div>
+                    <div class="col-3 btn-row ">
+                        <input type="button" value="Submit" id="submitButton">
+                    </div>
+                </div>
+            </div>
+            </form>
+            </div>
+            
+        <div class="main-children main-childS3">
+                <div class="footer">
+                    <h2>
+                    <small>&copy; Copyright 2019, Hobbies Collectibles</small>
+                    </h2>           
+                </div>  
+        </div>
+    </div>
+    
+</body>
+</html>

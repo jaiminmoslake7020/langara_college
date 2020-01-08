@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hobbies & Collectibles</title>
+    <script src = "../js/main.js" defer></script>
+    <link rel = "stylesheet" href = "../css/style.css">
+</head>
+<body id="registerBody" >
+    <div class="main-part">
+        <div class="main-children main-childP1">
+                <div class="header">
+                        <!-- LOGO AND TITLE -->
+                        <div class="logo">
+                            <div class="logoContent">
+                                <div>
+                                    <img src="../images/aanchal_arora_logo.png" class="logo-1">
+                                </div>
+                                <div>
+                                    <a href="../index.html" class=" logo-link ">Hobbies Collectibles</a> 
+                                </div> 
+                            </div>
+                        </div>
+                        <!-- NAVIGATION BAR -->
+                        <div class="navCenter">
+                        <nav>
+                            <ul>
+                                <a href="../index.html" class="btn" role="button">HOME</a>
+                                <a href="../pages/aboutUs.html" class="btn" role="button">ABOUT</a>
+                                <div class="drop">
+                                <!-- DROPDOWN MENU -->
+                                <button class="btn">GALLERY</button>
+                                    <div class="dropdown">
+                                    <li><a href="../pages/stamps.html">Stamps</a></li>
+                                    <li><a href="../pages/coins.html">Coins</a></li>
+                                    <li><a href="../pages/antiques.html">Antiques</a></li>
+                                    <li><a href="../pages/origami.html">Origami</a></li>
+                                    <li><a href="../pages/toys.html">Toys</a></li>
+                                    <li><a href="../pages/actionfigures.html">Action Figures</a></li>
+                                    </div>
+                                </div> 
+                                <a href="../pages/messageBoard.html" class="btn" role="button">QUERIES</a>
+                                <a href="../pages/event.html" class="btn" role="button">DISCOUNTS & EVENTS</a>
+                                <a href="../pages/contactUs.html" class="btn" role="button">CONTACTS</a>
+                                <a href="../pages/register.html" class="btn" role="button">REGISTER</a>
+                            </ul>           
+                        </nav>
+                        </div>
+                    </div>
+        </div>
+        <div class="main-children main-childP2">
+            <div id="outputBox">
+                
+            </div>
+            <!-- REGISTRATION FORM -->
+            <form id="formdiv">
+            <div class="container1">
+                    <h1>REGISTRATION</h1>
+               <div class="row">
+                   <div class="col-2">
+                       <label for="fname">Name</label>
+                   </div>
+                   <div class="col-3">
+                       <input type="text" placeholder="Enter your Name" id="fname" name="firstname">
+                   </div>
+               </div>
+               <div class="row">
+                    <div class="col-2">
+                        <label >Gender</label>
+                    </div>
+                    <div class="col-3">
+                        <label for="male">
+                            <input type="radio" id="male" value="Male" name="gender">Male
+                        </label>
+                        <label for="female">
+                            <input type="radio" id="female" value="Female" name="gender">Female
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="col-2">
+                            <label for="userAddress">Address</label>
+                        </div>
+                        <div class="col-3">
+                            <input type="text" placeholder="Enter your Address" id="userAddress">
+                        </div>
+                </div>
+                <div class="row">
+                        <div class="col-2">
+                            <label for="userCity">City</label>
+                        </div>
+                        <div class="col-3">
+                            <input type="text"  placeholder="Enter your City" id="userCity">
+                        </div>
+                </div>
+                <div class="row">
+                        <div class="col-2">
+                            <label for="contact">Contact</label>       
+                        </div>
+                        <div class="col-3">
+                            <input type="text" placeholder="Enter Contact Number" id="contact">
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <label for="pDate"> Date</label>
+                    </div>
+                    <div class="col-3">
+                        <input type="date" id="pDate" name="date">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                    </div>
+                    <div class="col-3 btn-row ">
+                        <input type="button" value="Submit" id="submitButton">
+                    </div>
+                </div>
+            </div>
+            </form>
+            </div>
+
+        <div class="main-children main-childP3">
+                <div class="footer">
+                    <h2>
+                    <small>&copy; Copyright 2019, Hobbies Collectibles</small>
+                    </h2>           
+                </div>  
+        </div>
+    </div>
+    
+</body>
+</html>

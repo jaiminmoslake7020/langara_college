@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mozzap</title>
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body class="index-page" id="indexPage">
+<header>
+    <div class="logo">
+        <a class="logo" href="index.html">Mozzap</a>
+    </div>
+    <nav>
+        <ul>
+            <li class="item"><a href="index.html" class="nav-link active ">Home</a></li>
+            <li class="item"><a href="pages/about.html" class="nav-link">About Us</a></li>
+            <li class="item"><a href="pages/contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+<main  >
+    <div class="left">
+        <p class="left-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+    <div class="right-up  div-with-image ">
+        <div class="img-container unsplash_embedd ">
+            <!-- Photo by Nathan Dumlao on Unsplash Image Link : https://unsplash.com/photos/zEdCT0qrodE -->
+            <img src="images/first.jpg" alt="Photo by Nathan Dumlao on Unsplash">
+            <!--    This embedd tag is provided by the Unsplash.com to give a cridit to the author of the image. Their words: If you’re using this photo on your website, you can add this badge to give credit to the photographer.                -->
+            <a href="https://unsplash.com/@nate_dumlao?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Nathan Dumlao"><span ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span>Nathan Dumlao</span></a>
+        </div>
+        <div class="title-container">
+            <p>Coffe Mug Picture</p>
+        </div>
+        <div class="description-container">
+            <p>This picture is taken from <a class="inline-link" href="https://unsplash.com/">https://unsplash.com/</a>; it belongs to <a class="inline-link" href="https://unsplash.com/@nate_dumlao">Nathan Dumlao</a>.He is brand consultant and content creator living in Los Angeles creating up the coast.<b>The previous text is also from his unsplash profile.</b> Now text from Lorem.ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+        <div class="link-container">
+            <a class="button" target="_blank" href="https://unsplash.com/photos/zEdCT0qrodE">View Picture Source</a>
+
+
+            <button id="openModal" >
+                Open Modal
+            </button>
+
+
+            <button id="openModalSub" >
+                Open Modal SUb
+            </button>
+
+        </div>
+    </div>
+    <div class="right-down div-with-image "  >
+        <div class="img-container unsplash_embedd "  >
+            <!-- Photo by Nathan Dumlao on Unsplash Image Link : https://unsplash.com/photos/zEdCT0qrodE -->
+            <img src="images/second.jpg" alt="Photo by Nathan Dumlao on Unsplash">
+            <!--    This embedd tag is provided by the Unsplash.com to give a cridit to the author of the image. Their words: If you’re using this photo on your website, you can add this badge to give credit to the photographer.                -->
+            <a href="https://unsplash.com/@nate_dumlao?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Nathan Dumlao"><span ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span>Nathan Dumlao</span></a>
+        </div>
+        <div class="title-container">
+            <p>Coffe Truck Picture</p>
+        </div>
+        <div class="description-container">
+            <p>This picture is taken from <a class="inline-link" href="https://unsplash.com/">https://unsplash.com/</a>; it belongs to <a class="inline-link" href="https://unsplash.com/@nate_dumlao">Nathan Dumlao</a>.He is brand consultant and content creator living in Los Angeles creating up the coast.<b>The previous text is also from his unsplash profile.</b> Now text from Lorem.ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+        <div class="link-container">
+            <a class="button" target="_blank" href="https://unsplash.com/photos/t7htLG6DkzE">View Picture Source</a>
+        </div>
+    </div>
+</main>
+<footer>
+    <p>&copy;Mozzap 2019</p>
+</footer>
+
+
+
+
+
+<div class="modal" id="modal" >
+    <div class="modal-body">
+        <div class="modal-heading">
+            <button id="closeModal" >
+                Close Modal
+            </button>
+        </div>
+        <div class="modal-content" id="modalContent" >
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="modalSub" >
+    <div class="modal-body">
+        <div class="modal-heading">
+            <button id="closeModalSub" >
+                Close Modal
+            </button>
+        </div>
+        <div class="modal-content" id="modalContentSub" >
+            This is subscription modal
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="modalRandom" >
+    <div class="modal-body">
+        <div class="modal-heading">
+            <button id="closeModalRandom" >
+                Close Modal
+            </button>
+        </div>
+        <div class="modal-content" id="modalContentRandom" >
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+</html>

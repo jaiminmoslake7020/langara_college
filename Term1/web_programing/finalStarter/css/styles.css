@@ -1,0 +1,45 @@
+.parent {
+    display: grid;
+    grid-template-rows: .25fr 5.5fr .25fr;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+header, footer {
+    height: 100%;
+    background-color: aqua;
+}
+
+footer div {
+    padding-top: 30px;
+    padding-left: 15px;
+    font-weight: bold;
+}
+
+header h1, header h2 {
+    padding-left: 15px;
+    font-weight: bold;
+}
+
+.js-tools {
+    display: grid;
+}
+
+.js-tools div {
+    padding: 20px;
+    border: 1px solid aqua;
+}
+
+.bonus {
+    background-color: yellow;
+    padding: 5px 0;
+    font-weight: bold;
+}
+
+.red{
+    color: red;
+}
+
+.green{
+    color: #00ae00;
+}

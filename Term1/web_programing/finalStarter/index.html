@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JS Final Exam</title>
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <script src="js/main.js" defer></script>
+    </head>
+    <body>
+        <div class="parent">
+            <header>
+                <h1>Introduction to Programming - Final Exam</h1>
+            </header>
+            <main class="js-tools">
+                <!-- Grading Information -->
+                <div>Grading Scheme:
+                    <ul>
+                        <li>Indentation: 3 Marks</li>
+                        <li>Documentation: 3 Marks</li>
+                        <li>Code Formatting: 3 Marks</li>
+                        <li>Code Spacing: 3 Marks</li>
+                        <li>Simple Interest Calculator: 5 Marks</li>
+                        <li>Fuel Consumption Rate Calculator: 3 Marks</li>
+                        <li>Distance Conversion: 10 Marks</li>
+                        <li>Load an Array of Grades: 10 Marks</li>
+                        <li>Calculate Average Grade: 5 Marks</li>
+                        <li>Simple Array of Objects: 5 Marks</li>
+                        <li class="bonus">Bonus - Character Scroller: +5 Marks</li>
+                    </ul>
+                    Total Possible Score: 50 (55 with Bonus)
+                </div>
+                <!-- Tool 1 Structure -->
+                <div class="tools tool1">
+                    <h1>Simple Interest Calculator</h1>
+                    <h2>Instructions:</h2>
+                    <ul>
+                        <li>Retrieve Principal, Interest Rate and Duration From the UI</li>
+                        <li>Calculate Interest with the following formula: Interest = Principal * (Interest Rate/ 100) * Duration</li>
+                        <li>Display Interest Back to User (rounded to 2 Decimals) with an appropriate message</li>
+                    </ul>
+                    <p>
+                        <label for="t1PrincipalAmount">Please Enter Amount Borrowed (Principal): </label>
+                        <input type="text" id="t1PrincipalAmount">
+                    </p>
+                    <p>
+                        <label for="t1Rate">Please Enter the Interest Rate (ie: enter 3.5 for 3.5%): </label>
+                        <input type="text" id="t1Rate">
+                    </p>
+                    <p>
+                        <label for="t1NumberOfPayments">Please Enter the Duration (ie: 4 years): </label>
+                        <input type="text" id="t1NumberOfPayments">
+                    </p>
+                    <button id="t1Submit">Calculate Interest</button>
+                    <p id="t1Output"></p>
+                </div>
+
+                <!-- Tool 2 Structure -->
+                <div class="tools tool2">
+                    <h1>Fuel Consumption Rate Calculator</h1>
+                    <h2>Instructions:</h2>
+                    <ul>
+                        <li>Retrieve Distance Travelled and Liters of Fuel Used from the UI</li>
+                        <li>Calculate Consumption Rate = Distance / Liters Used</li>
+                        <li>Display Consumption Rate back to User (rounded to 2 Decimals) with an appropriate message</li>
+                    </ul>
+                    <p>
+                        <label for="t2Distance">Please Enter Total Distance Travelled: </label>
+                        <input type="text" id="t2Distance">
+                    </p>
+                    <p>
+                        <label for="t2LitersUsed">Please Enter the Total Liters Used on the Trip</label>
+                        <input type="text" id="t2LitersUsed">
+                    </p>
+                    <button id="t2Submit">Calculate Consumption Rate</button>
+                    <p id="t2Output"></p>
+                </div>
+
+                <!-- Tool 3 Structure -->
+                <div class="tools tool3">
+                    <h1>Distance Conversion</h1>
+                    <h2>Instructions:</h2>
+                    <ul>
+                        <li>Retrieve Distance from the UI</li>
+                        <li>Convert to Miles (Distance * 0.62137)</li>
+                        <li>Convert to Kilometers (Distance * 1.60934)</li>
+                        <li>Display Converted Distance Back to User (rounded to 2 Decimals) with an appropriate message</li>
+                    </ul>
+                    <p>
+                        <label for="t3Distance">Please Enter the Distance you want to Convert: </label>
+                        <input type="text" id="t3Distance">
+                    </p>
+                    <button id="t3Miles">Convert to Miles</button>
+                    <button id="t3Km">Convert to Kilometers</button>
+                    <p id="t3Output"></p>
+                </div>
+
+                <!-- Tool 4 Structure -->
+                <div class="tools tool4">
+                    <h1>Load an Array of Grades</h1>
+                    <h2>Instructions:</h2>
+                    <ul>
+                        <li>Retrieve a Series of Grades from the UI</li>
+                        <li>Store each Grade Retrieved in an Array</li>
+                        <li>Display the Array Back to the User Each Time an Grade is Entered</li>
+                        <li>Give the User the ability to Reset the Array</li>
+                    </ul>
+                    <p>
+                        <label for="t4Grade">Please Enter the Name of a Grade: </label>
+                        <input type="text" id="t4Grade">
+                    </p>
+                    <button id="t4AddGrade">Add a Grade to the Array</button>
+                    <button id="t4Clear">Reset the Array</button>
+                    <p id="t4Output"></p>
+                </div>
+
+                <!-- Tool 5 Structure -->
+                <div class="tools tool5">
+                    <h1>Calculate the Average of all Grades in the Above Array</h1>
+                    <h2>Instructions:</h2>
+                    <ul>
+                        <li>There is no User Input from the UI other than Clicking the Calculate Average Button</li>
+                        <li>Use an Algorithm to Average Grade (Total Grade / Number of Grades Entered) from the Previous Array</li>
+                        <li>Display the Average Grade back to the User with an Appropriate Message</li>
+                    </ul>
+                    <button id="t5Submit">Calculate Average</button>
+                    <p id="t5Output"></p>
+                </div>
+
+                <!-- Tool 6 Structure -->
+                <div class="tools tool6">
+                    <h1>Create a Simple Array of Objects</h1>
+                    <h2>Instructions:</h2>
+                    <ul>
+                        <li>Retrieve the Information from the UI</li>
+                        <li>Store the Information into an Object</li>
+                        <li>Store the Object in an Array</li>
+                    </ul>
+                    <p>
+                        <label for="t6Name">Please Enter Character's Name: </label>
+                        <input type="text" id="t6Name">
+                    </p>
+                    <p>
+                        <label for="t6Race">Please Enter Character's Race: </label>
+                        <input type="text" id="t6Race">
+                    </p>
+                    <p>
+                        <label for="t6Gender">Please Enter Character's Gender: </label>
+                        <input type="text" id="t6Gender">
+                    </p>
+                    <p>
+                        <label for="t6Wisdom">Please Enter Character's Intelligence (scale 1-10): </label>
+                        <input type="text" id="t6Wisdom">
+                    </p>
+                    <p>
+                        <label for="t6HP">Please Enter Character's Health Points: </label>
+                        <input type="text" id="t6HP">
+                    </p>
+                    <p>
+                        <label for="t6MP">Please Enter Character's Magic Points: </label>
+                        <input type="text" id="t6MP">
+                    </p>
+                    <p>
+                        <label for="t6AP">Please Enter Character's Attack Power: </label>
+                        <input type="text" id="t6AP">
+                    </p>
+                    <p>
+                        <label for="t6DP">Please Enter Character's Defense Power: </label>
+                        <input type="text" id="t6DP">
+                    </p>
+                    <button id="t6Submit">Add Information</button>
+                    <p id="t6Output"></p>
+                </div>
+
+                <!-- Tool 7 Structure -->
+                <div class="tools tool7">
+                    <h1>Character Scroller</h1>
+                    <h2>Instructions:</h2>
+                    <ul>
+                        <li>There is no User Input from the UI other than Clicking the Load, Forward and Back Buttons</li>
+                        <li>Create the Load, Forward and Back Buttons</li>
+                        <li>Load button should Load a Random Character</li>
+                        <li>Forward and Back Buttons should Loop Indefinitely</li>
+                        <li>Use the Array of Objects built Above and Display each Character back to the User on Demand</li>
+                    </ul>
+                    <!-- Code Buttons Here: -->
+
+                    <button id="t7Load">Load Random Object</button>
+                    <button id="t7Prev">Prev Object In Current Random Object</button>
+                    <button id="t7Next">Next Object In Current Random Object</button>
+
+
+
+                    <p id="t7Output"></p>
+                </div>
+            </main>
+            <footer>
+                <div>&copy;2019 Langara College, WMDD 4820 Midterm Exam</div>
+            </footer>
+        </div>
+    </body>
+</html>

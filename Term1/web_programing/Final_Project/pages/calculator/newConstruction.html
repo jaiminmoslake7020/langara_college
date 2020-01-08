@@ -1,0 +1,122 @@
+<!DOCtype html>
+<html lang="en">
+  <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width-device-width, initial-scale 1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>New Construction</title>
+     <link rel="stylesheet" type="text/css" href="../../css/styles.css">
+     <script src="../../js/main.js" defer></script>
+   </head>
+  <body class ="newConst">
+    <div class="navigation">
+      <div class="logo">
+        <img src= "../../img/logo_design.png" alt="Logo" width="50" height="70">
+      </div>
+      <nav>
+          <ul>
+              <li class="button">
+                <a href="../../index.html">Home</a>
+              </li>
+              <li class="button">
+                <a href="../../pages/login.html">Login</a>
+              </li>
+              <li class="button">
+                <a href="../../pages/career/career.html">Career</a>
+              </li>
+              <li class="dropdown">
+                <a href="../../pages/calculator" class="dropdown-btn">Calculator</a>
+                <div class="dropdown-item">
+                  <a href="../../pages/calculator/newConstruction.html" class="dropdown-btn">New Construction</a>
+                  <a href="../../pages/calculator/renovation.html" class="dropdown-btn">Renovation</a>
+                </div>
+              </li>
+              <li class="button">
+                  <a href="../../pages/logout.html">Logout&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                </li>
+            </ul>
+      </nav>
+    </div> 
+    <main class="main-container">
+      <div class="container4">
+        <div class="content4">
+          <h2><u>Calculate the Budget</u></h2>
+          <p class="bmContainer"><a id="contDiv"></a></p><br>
+          <div class="sec" id= "sec1">
+            <h3>Land Area</h3>
+            <label for="box1txtField">Covered Area:</label>
+            <input type="text" id="box1txtField"> in sqft.<br>
+            <label for="box2txtField">Structure Price: </label>
+            <input type="text" id="box2txtField"> per sqft.<br>
+            <button class="outputs" id="box1">Calculate</button><br><br>
+            <p id="output1"></p><br>
+
+            <h3>Lumber</h3>
+            <label for="box3txtField">length of lumber:</label>
+            <input type="text" id="box3txtField"> in ft<br>
+            <label for="box4txtField">Price: </label>
+            <input type="text" id="box4txtField"> per ft<br>
+            <button class="outputs" id="box2">Calculate</button><br><br>
+            <p id="output2"></p><br>
+
+
+            <h3>Floor</h3>
+            <div class= "option">
+              <label class="newBudget">
+                <input type="radio" id="checked" name="radio">Yes
+                <span class="checkmark"></span>
+              </label><br>
+              <label class="newBudget">
+                <input type="radio" id="notChecked" name="radio">&nbsp;No
+                <span class="checkmark"></span>
+              </label>
+            </div><br>
+
+            <div id="floorThing"  class = "done">
+              <h3>Material For Floor</h3>
+              <h4><u>Wood</u></h4>
+              <label for="box5txtField">Flooring Area: </label>
+              <input type="text" id="box5txtField"> in sqft.<br> 
+              <label for="box6txtField">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Floor Price:</label>
+              <input type="text" id="box6txtField"> per sqft.<br>
+              <button class="outputs" id="box3">Calculate</button><br><br>
+              <p id="output3"></p><br>
+
+              <h4><u>Laminated</u></h4>
+              <label for="box7txtField">Flooring Area: </label>
+              <input type="text" id="box7txtField"> in sqft.<br>
+              <label for="box8txtField">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Floor Price:</label>
+              <input type="text" id="box8txtField"> per sqft.<br>
+              <button class="outputs" id="box4">Calculate</button><br><br>
+              <p id="output4"></p><br>
+
+              <h4><u>Tiles</u></h4>
+              <label for="box9txtField">Flooring Area: </label>
+              <input type="text" id="box9txtField"> in sqft.<br>
+              <label for="box10txtField">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Floor Price:</label>
+              <input type="text" id="box10txtField"> per sqft.<br>
+              <button class="outputs" id="box5">Calculate</button><br><br>
+              <p id="output5"></p><br>
+            </div>
+            <p id="outputfloor"></p><br>
+      
+            <h3>Roof</h3>
+            <label for="box11txtField">Covered Area:</label>
+            <input type="text" id="box11txtField"> in sqft.<br>
+            <label for="box12txtField">Structure Price: </label>
+            <input type="text" id="box12txtField"> per sqft.<br>
+            <button class="outputs" id="box6">Calculate</button>
+            <p id="output6"></p><br>
+
+            <p id="output7"></p><br>
+          </div>
+        </div>
+      </div>  
+    </main>
+    <footer>
+        <div >
+          &copy; Copyright Sohal_Neet Constructions
+        </div>
+    </footer>
+  </body>
+</html>

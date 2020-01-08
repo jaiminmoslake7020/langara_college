@@ -1,0 +1,523 @@
+/***** Homepage Start ******/
+/**** index file ****/
+*{
+    margin: 0;
+}
+
+.index{
+    display: grid;
+    grid-template-areas:'navigation    navigation' 
+                        'container     container'
+                        'footer        footer';
+                                          
+    width:100vw;
+    padding:0;
+}
+/**** Navigation Bar ****/
+.navigation{
+    display: grid;
+    grid-template-areas:'logo nav' ;
+    grid-area: navigation;
+    background-color:#680000;    
+    width:100vw;
+    height: 70px;
+    font-size: 20px;
+}
+  
+.navigation a {
+    text-decoration: none;
+    color: #E1A0A0;
+    padding: 8px 23px;
+    align-items: initial;
+}
+
+nav {
+    grid-area: nav;
+    padding-top: 20px;
+}
+/**** Button On Navigation Bar ****/
+.dropdown{
+    display: inline-block;
+    font-weight: 800;
+    height: fit-content;
+    position: relative;
+}
+  
+.dropdown:hover .dropdown-item{
+     display: block;
+}
+  
+.dropdown-item a{
+    display: block;
+}
+  
+.dropdown-item{
+    position: absolute;
+    z-index: 1;
+    min-width: 160px;
+    display: none;
+    top:10px;
+    padding-top: 20px;
+}
+  
+.dropdown-item a{
+    background-color: #680000;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+
+}
+
+.button{
+    display: inline-block;
+    font-weight: 800;
+}
+/***** Logo *****/
+.logo {
+    grid-area: logo;
+    padding-left: 16px;
+    padding-top: 2px;
+}
+
+/**** Main *****/
+.main-container{
+    grid-area: container;
+    min-height: 100vh;
+}
+.index .main-container{
+    grid-area: container;
+}
+.container{
+    width:100vw;
+    min-height: 100vh;
+    position: relative;
+}
+.content{
+    grid-area: content;
+    width: 50%;
+    padding: 2vw 23vw;
+    position: absolute;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    top: 5vh;
+    color: #470404;
+}
+
+.image{
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+}
+
+.image img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+  
+.image a {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+/*  https://unsplash.com button css  */
+.image_from_unsplash a { 
+    background-color:black;
+    color:white;
+    text-decoration:none;
+    padding:4px 6px;
+    font-family: Helvetica, Ubuntu, Roboto, Noto, Segoe UI;
+    font-size:12px;
+    font-weight:bold;
+    line-height:1.2;
+    display:inline-block;
+    border-radius:3px;
+}
+
+.image_from_unsplash a span{
+    display:inline-block;
+    padding:2px 3px;
+}
+
+.image_from_unsplash a span svg{
+    height:12px;
+    width:auto;
+    position:relative;
+    vertical-align:middle;
+    top:-2px;
+    fill:white;
+}
+
+.btn {
+    padding: 10px 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 56px;
+    cursor: pointer;
+    background-color: #680000;
+    border: none;
+    position: relative;
+}
+.btn a {
+    color: #E1A0A0;
+    text-decoration: none;
+}
+
+/****** Footer ****/
+footer{
+    grid-area: footer;
+    background-color:#680000;
+    color: #E1A0A0;
+    width: 100vw;
+    z-index: 1;
+}
+
+footer div{
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/****** Homepage ends ******/
+
+/****** Sign Up ******/
+.sign {
+    display: grid;
+    grid-template-areas:'navigation    navigation' 
+                        'container1    container1'
+                        'footer        footer';
+    width:100vw;
+    padding:0;
+}
+.main-container{
+    grid-area: container1;
+    min-height: 100vh;
+}
+.sign .main-container{
+    grid-area: container1;
+}
+.container1 { 
+    width:100vw;
+    position: absolute;
+    min-height: 100vh;
+}
+.content1 {
+    grid-area: content1;
+    width: 35%;
+    padding: 2vw 2vw;
+    position: absolute;
+    min-height: 90vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    color: #470404;
+    background-color: #E1A0A0;
+    margin-left: 450px;
+    text-align: center;
+    opacity: 80%;
+    top: 1.5vh;
+}
+
+input[type=text], input[type=password] {
+  width: 40%;
+  padding: 14px 20px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+.signupbtn {
+    grid-area: signupbtn;
+    width: 40%;
+    padding: 14px 20px;
+    background-color: green;
+}
+.cancelbtn {
+    grid-area: cancelbtn;
+    width: 40%;
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/****** Login ******/
+.loginn {
+    display: grid;
+    grid-template-areas:'navigation      navigation' 
+                        'container2      container2'
+                        'footer        footer';
+    width:100vw;
+    padding:0;
+}
+
+.loginn .main-container{
+    grid-area: container2;
+}
+
+.container2 { 
+    width:100vw;
+}
+.content2 {
+    grid-area: content2;
+    width: 35%;
+    padding: 2vw 2vw;
+    position: absolute;
+    min-height: 90vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    color: #470404;
+    background-color: #E1A0A0;
+    margin-left: 450px;
+    text-align: center;
+    opacity: 80%;
+    top: 10vh;
+}
+
+/****** Logout *****/
+.logOut {
+    display: grid;
+    grid-template-areas:'navigation    navigation' 
+                        'container3    container3'
+                        'footer        footer';
+    width:100vw;
+    padding:0;
+}
+.logOut .main-container{
+    grid-area: container3;
+}
+.container3 { 
+    width:100vw;
+}
+.content3 {
+    grid-area: content3;
+    width: 50%;
+    padding: 2vw 2vw;
+    position: absolute;
+    height: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    color: #470404;
+    background-color: #E1A0A0;
+    margin-left: 300px;
+    margin-top: 300px;
+    text-align: center;
+    opacity: 80%;
+    top: 10vh;
+}
+
+/****** New Construction HTML *****/
+.newConst {
+    display: grid;
+    grid-template-areas:'navigation    navigation' 
+                        'container4     container4'
+                        'footer        footer';
+    width:100vw;
+    padding:0;
+}
+
+.newConst .main-container{
+    grid-area: container4;
+}
+
+.container4 {
+    width:100vw;
+    height:200vw;
+    background-color: #E1A0A0;
+    background-image: linear-gradient(to right, #E1A0A0 , #680000);
+}
+.content4 {
+    grid-area: content4;
+    width: 50%;
+    padding: 2vw 23vw;
+    position: relative;
+    min-height: 110vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    color: #470404;
+    text-align: center;
+}
+.outputs {
+    background-color: #680000;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 6px 12px;
+    border: none;
+    color: #E1A0A0;
+}
+#floorThing{
+    display: none;
+}
+
+/****** Renovation *****/
+.Renovtn {
+    display: grid;
+    grid-template-areas:'navigation           navigation' 
+                        'containerReno        containerReno'
+                        'footer               footer';
+    width:100vw;
+    padding:0;
+}
+.Renovtn .main-container{
+    grid-area: containerReno;
+}
+
+.containerReno {
+    width:100vw;
+    height:200vw;
+    background-color: #E1A0A0;
+    background-image: linear-gradient(to right, #E1A0A0 , #680000);
+}
+.contentReno {
+    grid-area: contentReno;
+    width: 50%;
+    padding: 2vw 23vw;
+    position: relative;
+    min-height: 110vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    color: #470404;
+    text-align: center;
+}
+.button1 {
+    display: inline-block;
+    font-weight: 800;
+    background-color: #680000;
+}
+.button1 a {
+    color: #E1A0A0;
+}
+.outputs {
+    background-color: #680000;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 6px 12px;
+    border: none;
+    color: #E1A0A0;
+}
+
+/****** Career Page *****/
+.jobs {
+    display: grid;
+    grid-template-areas:'navigation    navigation' 
+                        'container5    container5'
+                        'footer        footer';
+    width:100vw;
+    padding:0;
+}
+.jobs .main-container {
+    grid-area: container5;
+}
+.container5 { 
+    grid-area: container5;
+    width:100vw;
+}
+.content5 {
+    grid-area: content5;
+    width: 35%;
+    padding: 2vw 2vw;
+    position: absolute;
+    min-height: 90vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    color: #470404;
+    background-color: #E1A0A0;
+    margin-left: 450px;
+    text-align: center;
+    opacity: 80%;
+    top: 10vh;
+}
+.btnn {
+    padding: 6px 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #680000;
+    border: none;
+    position: relative;
+}
+.btnn a {
+    color: #E1A0A0;
+    text-decoration: none;
+}
+
+/****** Apply Form *****/
+.applyy {
+    display: grid;
+    grid-template-areas:'navigation    navigation' 
+                        'container6    container6'
+                        'footer        footer';
+    width:100vw;
+    padding:0;
+}
+.applyy .main-container {
+    grid-area: container6;
+}
+.container6 { 
+    grid-area: container6;
+    width:100vw;
+}
+.content6 {
+    grid-area: content6;
+    width: 35%;
+    padding: 2vw 2vw;
+    position: absolute;
+    min-height: 90vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    color: #470404;
+    background-color: #E1A0A0;
+    margin-left: 450px;
+    text-align: center;
+    opacity: 80%;
+    margin-top: 10px;
+    top: 8.5vh;
+}
+
+/****n Submit Form ****/
+.submitt {
+    display: grid;
+    grid-template-areas:'navigation    navigation' 
+                        'container7    container7'
+                        'footer        footer';
+    width:100vw;
+    padding:0;
+}
+.submitt .main-container {
+    grid-area: container7;
+}
+.container7 { 
+    grid-area: container7;
+    width:100vw;
+}
+.content7 {
+    grid-area: content7;
+    width: 50%;
+    padding: 2vw 2vw;
+    position: absolute;
+    height: 220px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    color: #470404;
+    background-color: #E1A0A0;
+    margin-left: 300px;
+    margin-top: 260px;
+    text-align: center;
+    opacity: 80%;
+    top: 6vh;
+}
+.btns {
+    padding: 6px 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #680000;
+    border: none;
+    position: relative;
+}
+.btns a {
+    color: #E1A0A0;
+    text-decoration: none;
+}
+
+
+
+
+

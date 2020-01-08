@@ -1,0 +1,747 @@
+/*
+https://unsplash.com/photos/NeTPASr-bmQ
+https://unsplash.com/photos/MJSFNZ8BAXw
+https://unsplash.com/photos/8lnbXtxFGZw
+https://unsplash.com/photos/OApHds2yEGQ
+https://unsplash.com/photos/0sPFjdcRhko
+
+
+    background-color: rgb(105,93,70);
+
+
+*/
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    background-color: rgb(105,93,70);
+}
+
+.grid-manager{
+    display: grid;
+    grid-template-areas: 'header-area'
+    'content-area'
+    'footer-area' ;
+    grid-gap: 10px;
+}
+
+.header{
+    grid-area: header-area;
+    background-color: rgb(105,93,70);
+}
+
+.header .header-grid-container{
+    display: grid;
+    grid-template-areas: 'logo-area navigation navigation navigation navigation navigation navigation navigation links-area links-area links-area links-area';
+    grid-gap: 5px;
+}
+
+.header .navigation-container{
+    grid-area: navigation;
+    margin-top: -10px;
+    height: 40px;
+}
+
+.header .navigation-container nav.navigation ul{
+    margin: 0;
+    padding: 0;
+}
+
+.header .navigation-container nav.navigation li{
+    list-style: none;
+    display: inline-block;
+}
+
+.header .navigation-container nav.navigation li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 34px 30px;
+}
+
+.header .navigation-container nav.navigation li a:hover{
+    background-color:rgb(0,133,117);
+    font-weight: bold;
+}
+
+.header .navigation-container nav.navigation li a.active{
+    background-color:rgb(0,133,117);
+    font-weight: bold;
+}
+
+.header .header-grid-container .logo{
+    grid-area: logo-area;
+    background-color: rgb(0,133,117);
+    padding: 10px;
+}
+
+.header .header-grid-container .links{
+    grid-area: links-area;
+}
+
+.logo-content{
+    font-weight: bold;
+    font-size: 24px;
+    color: rgb(0,133,117);
+    padding: 10px 0px 0px 30px;
+}
+
+.logo-content a img{
+    width: 100px;
+    height: 28px;
+}
+
+.links-content{
+    text-align: right;
+    padding: 15px 30px 10px 0px;
+}
+
+.footer{
+    grid-area: footer-area;
+    background-color: rgb(105,93,70);
+    color: white;
+}
+
+.footer p{
+    text-align: center;
+}
+
+.content-wrapper{
+    grid-area: content-area;
+    min-height: 90vh;
+}
+
+
+
+/*
+LOGIN REGISTER PAGE
+*/
+
+.login-page .content-wrapper{
+    display: grid;
+    grid-template-areas: 'blank-block login-div ';
+    grid-gap: 10px;
+}
+
+.register-page .content-wrapper{
+    display: grid;
+    grid-template-areas: 'blank-block register-div';
+    grid-gap: 10px;
+}
+
+.contact-page .content-wrapper{
+    display: grid;
+    grid-template-areas: 'blank-block contact-div';
+    grid-gap: 10px;
+}
+
+.about-page .content-wrapper{
+    display: grid;
+    grid-template-areas: 'blank-block about-div';
+    grid-gap: 10px;
+}
+
+.blank-div{
+    grid-area: blank-block;
+    width: 50vw;
+}
+
+.contact-form{
+    grid-area: contact-div;
+    width: 30vw;
+    z-index: 2;
+}
+
+.login-form{
+    grid-area: login-div;
+    width: 30vw;
+    z-index: 2;
+}
+
+.register-form{
+    grid-area: register-div;
+    width: 30vw;
+    z-index: 2;
+}
+
+.about-div{
+    grid-area: about-div;
+
+    background-color:rgba(255,94,14,0.6);
+    z-index: 2;
+    color: white;
+
+    padding: 50px 20px;
+
+    /*right: 0;*/
+    /*position: absolute;*/
+    /*width: 60vw;*/
+    /*height: 90vh;*/
+}
+
+
+
+/*
+PAGES/HOME PAGE
+*/
+
+.home-page .content-wrapper  {
+    display: grid;
+    grid-template-areas: 'expense-form-a dashboard-view-area';
+    grid-template-columns: 50% 50%;
+    background-image: url("../images/home/first.jpeg");
+    background-size: cover;
+}
+
+.dashboard-view{
+    grid-area:dashboard-view-area;
+    background-color: rgba(0,133,117,0.3);
+    color: white;
+}
+
+.dashboard-view-child{
+    /*background-color:rgba(255,94,14,0.4);*/
+    width: 100%;
+    height: border-box;
+}
+
+.home-page .content-wrapper .blank-div .slide-container .img-container{
+    z-index: -1;
+}
+
+.home-page .content-wrapper .expense-form{
+    z-index: 1;
+    grid-area: expense-form-a;
+    background-color: rgba(0,133,117,0.3);
+    padding-top: 50px;
+    padding-left:50px;
+    padding-right:50px;
+}
+
+.form-view{
+
+}
+
+.list-container{
+    padding: 15px;
+    grid-gap: 10px;
+    display: grid;
+    background-color: rgb(106,156,147);
+    height: fit-content;
+}
+
+.friend-list{
+    grid-area: fl-a;
+    grid-template-areas: 'bc-a'
+    'lcc-a'  ;
+}
+
+.expense-list{
+    grid-area: el-a;
+    grid-template-areas: 'bc-a'
+    'lcc-a'  ;
+}
+
+.group-list{
+    grid-area: gl-a;
+    grid-template-areas: 'bc-a'
+    'lcc-a'  ;
+}
+
+.list-container .btn-container{
+    grid-area: bc-a;
+}
+
+.list-container .list-container-child{
+    grid-area: lcc-a;
+}
+
+.item{
+    width: 100%;
+    display: grid;
+    grid-template-areas: 'la la la aa';
+    background-color: rgb(0,133,117);
+    color: white;
+    align-items: center;
+}
+
+.lable{
+    grid-area: la;
+}
+
+.lable-title{
+    margin: 15px;
+}
+
+.actions{
+    grid-area: aa;
+    text-align: right;
+}
+
+.actions-container{
+    margin: 15px;
+}
+
+.actions-container .btn{
+    background-color:rgb(105,93,70);
+    padding: 5px 8px;
+}
+
+
+
+.form-view{
+    display: grid;
+    grid-template-areas: 'ba1 fa ba2';
+}
+
+.blnk-area1{
+    grid-area: ba1;
+}
+
+.blnk-area2{
+    grid-area: ba2;
+}
+
+.form-area{
+    grid-area: fa;
+}
+
+.form-box{
+    width: 100%;
+}
+
+
+
+
+.index-page .content-wrapper,
+.login-page .content-wrapper,
+.contact-page .content-wrapper,
+.about-page .content-wrapper,
+.register-page .content-wrapper,
+.home-page .content-wrapper{
+    margin-top: -10px;
+}
+
+.slide-container.first{
+    height: 90vh;
+}
+
+.slide-container.second,
+.slide-container.third,
+.slide-container.four{
+    height: 100vh;
+}
+
+.slide-container{
+    position: relative;
+    width: 100vw;
+}
+
+.slide-container .img-container{
+    position: absolute;
+    width: 100%;
+}
+
+.slide-container.first .img-container .img-blur-bro{
+    height: 90vh;
+}
+
+.slide-container.first.register-page .img-container .img-blur-bro{
+    height: 98vh;
+}
+
+.slide-container.second .img-container .img-blur-bro,
+.slide-container.third .img-container .img-blur-bro,
+.slide-container.four .img-container .img-blur-bro{
+    height: 100vh;
+}
+
+.slide-container.login-page .img-container .img-blur-bro,
+.slide-container.register-page .img-container .img-blur-bro,
+.slide-container.contact-page .img-container .img-blur-bro
+{
+    background-color: rgba(255,94,14,0.2);
+}
+
+.slide-container .img-container .img-blur-bro{
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: rgba(0,133,117,0.3);
+    z-index: 1;
+}
+
+.slide-container.first .img-container img{
+    height: 90vh;
+}
+
+.slide-container.first.register-page .img-container img{
+    height: 98vh;
+}
+
+.slide-container.second .img-container img,
+.slide-container.third .img-container img,
+.slide-container.four .img-container img{
+    height: 100vh;
+}
+
+.slide-container .img-container img{
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+.slide-container.first .text-box{
+    height: 90vh;
+}
+
+.slide-container.second .text-box,
+.slide-container.third .text-box,
+.slide-container.four .text-box{
+    height: 100vh;
+}
+
+.slide-container .text-box{
+    position: absolute;
+    width: 35vw;
+    background-color:rgba(255,94,14,0.4);
+    z-index: 2;
+    display: flex;
+}
+
+.slide-container .text-box.right{
+    right: 0;
+}
+
+.slide-container .text-box.left{
+    left: 0;
+}
+
+.slide-container .text-box .text{
+    align-self: center ;
+    justify-self:center ;
+    padding: 0px 50px;
+}
+
+.slide-container.first .text-box .text p.text-info{
+    font-size: 80px;
+}
+
+.slide-container.second .text-box .text p.text-info{
+    font-size: 60px;
+}
+
+.slide-container.third .text-box .text p.text-info{
+    font-size: 65px;
+}
+
+.slide-container .text-box .text p.text-info{
+    font-size: 80px;
+    color: white;
+}
+
+.slide-container .image-author-credit-box{
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+    z-index:3;
+}
+
+.slide-container .image-author-credit-box a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 4px 6px;
+    font-family: -apple-system, BlinkMacSystemFont, San Francisco, Helvetica Neue , Helvetica, Ubuntu, Roboto, Noto, Segoe UI , Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.2;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/**
+Here there will be CSS style shortcuts which helps to be more productive while designing
+*/
+
+.dnone{
+    display: none !important;
+}
+
+.dblock{
+    display: block;
+}
+
+
+.box{
+    padding: 0;
+    margin: 10px;
+    color: white;
+}
+.box-heading{
+    padding: 15px 30px;
+    background-color: rgb(0,133,117);
+}
+.box-content{
+    padding: 15px 30px;
+    background-color: rgb(106,156,147);
+}
+.box-footer{
+    padding: 15px 30px;
+    background-color: rgb(0,133,117);
+}
+
+.box-title{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.c1{
+    color: rgb(105,93,70);
+}
+.c2{
+    color: rgb(255,94,14);
+}
+.c3{
+    color: rgb(0,133,117);
+}
+.c4{
+    color: rgb(179,167,125);
+}
+.c5{
+    color: rgb(255,113,44);
+}
+.c6{
+    color: rgb(106,156,147);
+}
+.c7{
+    color: rgb(84,84,84);
+}
+.c8{
+    color: rgb(255,255,255);
+}
+
+.bc1{
+    background-color:rgb(105,93,70);
+}
+.bc2{
+    background-color:rgb(255,94,14);
+}
+.bc3{
+    background-color:rgb(0,133,117);
+}
+.bc4{
+    background-color:rgb(179,167,125);
+}
+.bc5{
+    background-color:rgb(255,113,44);
+}
+.bc6{
+    background-color:rgb(106,156,147);
+}
+.bc7{
+    background-color:rgb(84,84,84);
+}
+.bc8{
+    background-color:rgb(255,255,255);
+}
+
+
+form{
+    background-color: transparent;
+}
+
+.input-block{
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    margin: 0 -15px 20px -15px;
+}
+
+form.no-label label{
+    display: none;
+}
+
+form.no-label label.show-me{
+    display: initial;
+}
+
+input, select, textarea{
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #333333;
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid #3b3b3b;
+}
+
+label.input-label{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="checkbox"], input[type="radio"]{
+    display: inline-block;
+    width: auto;
+}
+
+label.input-label.checbox-label{
+    display: inline-block;
+}
+
+.login-form{
+    margin: 50px 10px;
+}
+
+.register-form{
+    margin: 50px 10px;
+}
+
+.contact-form{
+    margin: 50px 10px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 15px;
+    text-align: center;
+    /*background-color: white;*/
+    border: 1px solid white;
+    color: white;
+    /*border-radius: 3px;*/
+    width: fit-content;
+    text-decoration: none;
+    background-color: rgb(0,133,117);
+    font-weight: bolder;
+    font-size: 12px;
+
+}
+
+.btn:hover{
+    background-color:rgb(105,93,70);
+}
+
+.btn.active{
+    background-color:rgb(105,93,70);
+}
+
+#loginFormBtn{
+    margin: 0 10px;
+}
+
+#registerFormBtn{
+    margin: 0 10px;
+}
+
+.btn.btn-link{
+    text-decoration: underline;
+}
+
+.btn:focus{
+    outline: none;
+    box-shadow:2px 2px 1px 0px rgba(50, 50, 50, 0.75);
+}
+
+.btn:hover{
+    outline: none;
+    box-shadow:2px 2px 1px 0px rgba(50, 50, 50, 0.75);
+}
+
+.btn-container{
+    text-align: right;
+}
+
+.left-align-button{
+    float: left;
+}
+
+#whoPaid{
+    display: grid;
+    grid-template-areas: 'participant participant participant participant';
+}
+
+#forWhom{
+    display: grid;
+    grid-template-areas: 'participant participant participant participant';
+}
+
+p{
+    margin: 5px 0px;
+}
+
+.input-block.checbox{
+    margin: 0 0 0 0;
+}
+
+.input-block.radio{
+    margin: 0 0 0 0;
+}
+
+#peoplesInvolved{
+    margin-left: -15px;
+}
+
+.info-text{
+    color: #a0361e;
+}
+
+.expense-form-box .box-heading{
+    display: grid;
+    grid-template-areas: 'left left left left right';
+}
+
+.expense-form-box .box-heading .left{
+    display:grid ;
+    grid-area: right;
+}
+
+.expense-form-box .box-heading .left{
+    display:grid ;
+    grid-area: left;
+}
+
+
+/* This is the taken from https://unsplash.com they have this button CSS to be embedded in HTML files copy pasting credit button from the image file page  */
+.unsplash_embedd a{
+    background-color:black;
+    color:white;
+    text-decoration:none;
+    padding:4px 6px;
+    font-family:-apple-system, BlinkMacSystemFont, San Francisco, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif;
+    font-size:12px;
+    font-weight:bold;
+    line-height:1.2;
+    display:inline-block;
+    border-radius:3px;
+}
+
+.unsplash_embedd a span{
+    display:inline-block;
+    padding:2px 3px;
+}
+
+.unsplash_embedd a span svg{
+    height:12px;
+    width:auto;
+    position:relative;
+    vertical-align:middle;
+    top:-2px;
+    fill:white;
+}
+
+
+
+

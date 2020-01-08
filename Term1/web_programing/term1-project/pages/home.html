@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Split</title>
+    <link rel="stylesheet" href="../packages/fontawesome-free-5.11.2-web/css/all.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="application/javascript" src="../js/main.js" defer ></script>
+</head>
+<body>
+<div class="grid-manager home-page " >
+    <div class="header">
+
+        <div class="header-grid-container">
+            <div class="logo">
+                <div class="logo-content">
+                    <a href="../index.html"><img alt="logo simple split" src="../images/logo/logo_white_without_border.png"></a>
+                </div>
+            </div>
+            <div class="navigation-container" >
+                <nav class="navigation">
+                    <ul>
+                        <li class="items item3"><a class="active" href="../pages/home.html">Home</a></li>
+                        <li class="items item1"><a href="../pages/about.html">About Us</a></li>
+                        <li class="items item2"><a href="../pages/contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="links">
+                <div class="links-content">
+                    <a href="../pages/login.html" class=" btn "  id="loginFormBtn"  ><i class="fa fa-sign-in-alt "></i>&nbsp;Login</a>
+                    <a href="../pages/register.html" class=" btn "  id="registerFormBtn" ><i class="fa fa-user-alt"></i>&nbsp;Register</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="content-wrapper  ">
+        <div id="expense-form" class="expense-form">
+            <div class=" box expense-form-box  ">
+                <div class=" box-heading ">
+                    <p class="box-title" >Expense</p>
+                </div>
+                <div class="box-content">
+                    <form class="expense no-label " >
+                        <div class="input-block">
+                            <label for="expense_money_spent_on_which" class="input-label" >Money spent on</label>
+                            <input placeholder="Anything on which you have spend money?" id="expense_money_spent_on_which" name="expense-form[money_spent_on_which]" type="text" class="input-el">
+                            <p id="expense_money_spent_on_which_info" class="info-text dnone " ></p>
+                        </div>
+                        <div class="input-block">
+                            <label for="expense_money_spent" class="input-label" >Money Spent</label>
+                            <input placeholder="How much?" id="expense_money_spent" name="expense-form[money_spent]" type="number" class="input-el">
+                            <p id="expense_money_spent_info" class="info-text dnone " ></p>
+                        </div>
+                        <div class="input-block">
+                            <label for="expense_people" class="input-label" >People Involved</label>
+                            <input placeholder="People involved in the transaction." id="expense_people" name="expense-form[people]" type="text" class="input-el">
+                            <p id="expense_people_info" class="info-text dnone " ></p>
+                            <p class="hint-text  " >Seperate name of people with comma&nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Example:&nbsp;&nbsp;&nbsp;Jaimin , Raj , Sachin , Brijesh&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                        </div>
+                        <div id="peoplesInvolved" class="dnone" data-display="block" >
+                            <div class="whoPaidContainer">
+                                <p>Select Person who paid the money?</p>
+                                <div id="whoPaid">
+
+                                </div>
+                                <p id="whoPaidContainer_info" class="info-text dnone " ></p>
+                            </div>
+                            <div class="forWhomContainer">
+                                <p>Select people who were part of that bill?</p>
+                                <div id="forWhom">
+
+                                </div>
+                                <p id="forWhomContainer_info" class="info-text dnone " ></p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="box-footer">
+                    <div class="btn-container"><a id="splitSubmitBtn" class="form-submit-link btn btn-split " >Split Bills</a></div>
+                </div>
+            </div>
+        </div>
+        <div id="dashboard-view" class=" dashboard-view ">
+            <div id="dashboardViewChild" class=" dashboard-view-child " >
+
+
+
+            </div>
+        </div>
+    </div>
+    <div class="footer"><p>&copy;&nbsp;Simple Split 2019</p></div>
+
+    <script type="application/xhtml+xml" id="whoPaidTemplate">
+        <div class="input-block checbox participant ">
+            <label for="expense_person_{FRIEND_ID}" class="input-label checbox-label" >
+                <input value="{FRIEND}" id="expense_person_{FRIEND_ID}" name="expense[who-paid]" type="radio" class="input-el">&nbsp;
+                {FRIEND}
+            </label>
+        </div>
+    </script>
+
+    <script type="application/xhtml+xml" id="forWhomTemplate">
+        <div class="input-block radio participant ">
+            <label for="expense_whom_{FRIEND_ID}" class="input-label checbox-label" >
+                <input value="{FRIEND}" id="expense_whom_{FRIEND_ID}" name="expense[for-whom]" type="checkbox" class="input-el">&nbsp;
+                {FRIEND}
+            </label>
+        </div>
+    </script>
+
+    <script type="application/xhtml+xml" id="expenseTemplate">
+
+        <div id="box-{BOX_ID}" class="expense-form">
+            <div class=" box expense-form-box  ">
+                <div class=" box-heading  ">
+                    <div class=" left ">
+                        <p class="box-title" >{TITLE}</p>
+                    </div>
+                    <div class=" right ">
+                        <p class="box-title" >${MONEY}</p>
+                    </div>
+                </div>
+                <div class="box-content" id="box-body-{BOX_ID}" >
+
+                </div>
+            </div>
+        </div>
+
+    </script>
+
+    <script type="application/xhtml+xml" id="hasToGive">
+
+        <div class=" box-row ">
+            <p><b>{personInvolved}</b> has to give ${share}</b> to <b>{payeePerson}</b>.</p>
+        </div>
+
+    </script>
+
+    <script type="application/xhtml+xml" id="hasToTake">
+
+        <div class=" box-row ">
+            <p><b>{payeePerson}</b> will get in total ${share}</b> from <b>{personsInvolvedString}</b>.</p>
+        </div>
+
+    </script>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+.btn{
+    display: inline-block;
+    padding: 10px 15px;
+    text-align: center;
+    /*background-color: white;*/
+    border: 1px solid white;
+    color: white;
+    /*border-radius: 3px;*/
+    width: fit-content;
+    text-decoration: none;
+    background-color: rgb(0,133,117);
+    font-weight: bolder;
+    font-size: 12px;
+}
+
+.btn.btn-link{
+    text-decoration: underline;
+}
+
+.btn:focus{
+    outline: none;
+    box-shadow:2px 2px 1px 0px rgba(50, 50, 50, 0.75);
+}
+
+.btn:hover{
+    outline: none;
+    box-shadow:2px 2px 1px 0px rgba(50, 50, 50, 0.75);
+}
+
+.btn-container{
+    text-align: right;
+}
+
+.left-align-button{
+    float: left;
+}

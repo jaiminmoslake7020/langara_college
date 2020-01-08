@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Week 13 - Objects</title>
+        <link rel="stylesheet" href="css/styles.css" type="text/css">
+        <script src="js/main.js" type="application/javascript" defer ></script>
+    </head>
+    <body>
+        <div class="wrapper-parent">
+            <div class="children child1">
+                <h1>Load an Array of Character Objects</h1>
+                <!-- .c1-parent>(label[for=c1txtBox$]{Please Enter}+input[type=text id=c1txtBox$])*7 -->
+                <div class="c1-parent">
+                    <label class="c1-children" for="c1txtBox1">Please Enter Race:</label>
+                    <input class="c1-children" type="text" id="c1txtBox1">
+                    <label class="c1-children" for="c1txtBox2">Please Enter Name:</label>
+                    <input class="c1-children" type="text" id="c1txtBox2">
+                    <label class="c1-children" for="c1txtBox3">Please Enter Gender:</label>
+                    <input class="c1-children" type="text" id="c1txtBox3">
+                    <label class="c1-children" for="c1txtBox4">Please Enter Age:</label>
+                    <input class="c1-children" type="text" id="c1txtBox4">
+                    <label class="c1-children" for="c1txtBox5">Please Enter XP:</label>
+                    <input class="c1-children" type="text" id="c1txtBox5">
+                    <label class="c1-children" for="c1txtBox6">Please Enter Health:</label>
+                    <input class="c1-children" type="text" id="c1txtBox6">
+                    <label class="c1-children" for="c1txtBox7">Please Enter Mana:</label>
+                    <input class="c1-children" type="text" id="c1txtBox7">
+                    <label class="c1-children" for="c1txtBox8">Please Enter Strength:</label>
+                    <input class="c1-children" type="text" id="c1txtBox8">
+                </div>
+                <button id='addObject'>Add Character</button>
+                <p id="c1Output"></p>
+            </div>
+            <div class="children child2">
+                <h1>Display Content of Characters from Object Array</h1>
+                <button id="load">Load Random Character</button>
+                <!-- .c2-parent>(label[for=c2txtBox$]+input[type=text id=c2txtBox$])*8 -->
+                <div class="c2-parent">
+                    <button id="prev">&lt;&lt; Previous</button>
+                    <button id="next">Next &gt;&gt;</button>
+                    <label class="c2-children" for="c2txtBox1">Race:</label>
+                    <input class="c2-children" readonly type="text" id="c2txtBox1">
+                    <label class="c2-children" for="c2txtBox2">Name:</label>
+                    <input class="c2-children" readonly type="text" id="c2txtBox2">
+                    <label class="c2-children" for="c2txtBox3">Gender:</label>
+                    <input class="c2-children" readonly type="text" id="c2txtBox3">
+                    <label class="c2-children" for="c2txtBox4">Age:</label>
+                    <input class="c2-children" readonly type="text" id="c2txtBox4">
+                    <label class="c2-children" for="c2txtBox5">XP:</label>
+                    <input class="c2-children" readonly type="text" id="c2txtBox5">
+                    <label class="c2-children" for="c2txtBox6">Health:</label>
+                    <input class="c2-children" readonly type="text" id="c2txtBox6">
+                    <label class="c2-children" for="c2txtBox7">Mana:</label>
+                    <input class="c2-children" readonly type="text" id="c2txtBox7">
+                    <label class="c2-children" for="c2txtBox8">Strength:</label>
+                    <input class="c2-children" readonly type="text" id="c2txtBox8">
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
