@@ -1,0 +1,290 @@
+
+
+
+
+/*1. TYPOGRAPHY ================================ */
+
+
+
+
+/*2. LAYOUT BLOCKS===============================*/
+
+body
+{
+    margin: 0;  
+    padding: 0;
+}
+
+header
+{
+    text-align: center;
+
+    color: white;
+    background-color: black;
+
+    background-image: 
+    url("fela-images/fela1.jpg"),
+    linear-gradient(90deg, black,black, #555 40%,black);
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 200px;
+
+}
+
+
+
+
+article
+{
+   
+    margin: 100px 25%;
+}
+
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 1rem 2%;
+}
+
+
+footer ul {
+    list-style-type: none;
+}
+
+footer nav li {
+    display: block;
+}
+
+
+/*3. NAVIGATION =================================*/
+
+a
+{
+    color: red;
+}
+
+
+nav ul
+{
+    list-style-type: none; /*remove dots*/
+}
+
+nav li
+{
+    display: inline;
+}
+
+/*4. IMAGES =====================================*/
+
+
+img
+{
+    max-width: 100%;
+    height: auto;
+}
+
+/*4. UTILITY CLASSES ===============================*/
+
+
+.floatright
+{
+    float: right;
+    margin-left: 16px;
+}
+
+.floatleft
+{
+    float: left;
+    margin-right: 16px;
+}
+
+
+
+/*6. MEDIA QUERIES===============================*/
+
+
+@media screen and (max-width: 800px){
+
+    html {
+        font-size: 10px;
+    }
+
+	article{
+		width: 96%;
+		margin: auto;
+	}
+
+
+
+}
+
+
+
+/*20.DIAGNOSTICS=================================*/
+
+
+h1,h2{
+    font-family: 'Oswald', sans-serif;
+}
+
+header h1{
+    font-size: 3.157rem;
+    color: #788880;
+}
+
+header h1 span{
+    color: #c46d3b;
+}
+
+article h1{
+    font-size: 2.369rem;
+    color: black;
+}
+
+h3{
+    font-family: 'Alegreya Sans SC', sans-serif;
+    letter-spacing: 4px;
+}
+
+header nav ul li a{
+    padding: 12px;
+    border-right:1px solid orange ;
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li:last-of-type a{
+    border-right: none;
+}
+
+p:first-of-type::first-line{
+    font-weight: bold;
+}
+
+p:first-of-type:first-letter{
+    color: white;
+    float: left;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+    background-color: black;
+    margin: 0 5px 5px 0;
+}
+
+h2:nth-of-type(4){
+    border-bottom: 1px solid black;
+}
+
+h2 + p{
+    font-size: 1.777rem;
+    font-style: italic;
+}
+
+@media (max-width: 1200px) {
+    h3 + img.floatright{
+        float: none !important;
+        display: block;
+        margin-left: auto !important;
+        margin-right: auto;
+    }
+
+}
+
+@media (max-width:1000px) {
+    h3 + img.floatleft{
+        float: none !important;
+        display: block;
+        margin-left: auto ;
+        margin-right: auto !important;
+    }
+}
+
+footer h4{
+    color: white;
+}
+
+footer nav ul li a[href^="artists/contemporary"]{
+    color: firebrick;
+}
+
+footer nav ul li a[href^="artists/originators"]{
+    color: deepskyblue;
+}
+
+footer nav ul li a[href^="companies/"]{
+    color: lemonchiffon;
+}
+
+@media (max-width: 600px) {
+
+    header{
+        background-color: black;
+        background-image: linear-gradient(90deg, black,black, #555 40%,black);
+        min-height: 100px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    img{
+        float: none !important;
+        display: block;
+        margin-bottom: 10px;
+        margin-left:auto !important;
+        margin-right: auto !important;
+    }
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('icomoon/fonts/icomoon.eot?58wgcj');
+    src:  url('icomoon/fonts/icomoon.eot?58wgcj#iefix') format('embedded-opentype'),
+    url('icomoon/fonts/icomoon.ttf?58wgcj') format('truetype'),
+    url('icomoon/fonts/icomoon.woff?58wgcj') format('woff'),
+    url('icomoon/fonts/icomoon.svg?58wgcj#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+header nav ul li a {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+header nav ul li a[href^="home.html"]:before{
+    content: "\e900  ";
+}
+
+header nav ul li a[href^="music.html"]:before{
+    content: "\e911  ";
+}
+
+header nav ul li a[href^="video.html"]:before{
+    content: "\e912  ";
+}
+
+header nav ul li a[href^="search.html"]:before{
+    content: "\e986  ";
+}
+
+header nav ul li a[href^="contact.html"]:before{
+    content: "\e972  ";
+}
+
+
