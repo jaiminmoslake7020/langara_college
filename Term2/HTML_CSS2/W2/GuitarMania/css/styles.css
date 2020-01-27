@@ -1,0 +1,181 @@
+body{
+    margin: 0 .5rem 1rem .5rem;
+    padding: 0;
+}
+
+
+/* Responsive Images */
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/*FORM STLING*/
+
+label,
+textarea,
+input{
+    display: block;
+    width: 100%;
+}
+
+textarea{
+    min-height: 5rem;
+}
+
+input,
+textarea{
+    margin-bottom: 0.5rem;
+}
+
+
+/*TYPOGRAPHY*/
+
+.site-title,
+.section-title{
+    font-family: Oswald, "arial condensed", sans-serif;
+    margin-top: 0;
+}
+
+.site-title{
+    font-size: 3rem;
+    background-color: black;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    text-align: center;
+    color: white;
+    padding-top: 2rem;
+}
+
+.section-title{
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.guitar-small a h3,
+.guitar-big a h3{
+    text-decoration: none;
+    font-family: "roboto slab", courier, 'courier new', monotype, serif;
+    font-size: .875rem;
+    color: hotpink;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* NAVIGATION */
+
+nav a{
+    text-decoration: none;
+    background-color: #ccf;
+    display: block;
+    padding: .5rem 0;
+    color: black;
+}
+
+nav .menu-main{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 0.15rem;
+    text-align: center;
+    padding:0;
+}
+
+
+/* Media Queries ==== */
+@media print{
+
+    p{
+        font-size: 10pt;
+        line-height: 11pt;
+    }
+
+    body{
+        margin: .125in;
+    }
+
+    .advertisement{
+        display: none;
+    }
+
+}
+
+/* Mobile First
+
+ make common and mobile styles first
+ ( not in queries ).
+
+ then build with progressively larger min-width queries
+
+ */
+@media screen and (min-width: 760px){
+
+    nav .menu-main{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .guitar-small-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .section-title,
+    .guitar-small:first-of-type{
+        grid-column: 1/-1;
+    }
+
+    main{
+        max-width: 845px;
+        margin: auto;
+    }
+
+    .featured-form{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 10px;
+    }
+
+}  /* end 760 */
+
+
+@media screen and (min-width: 1000px){
+
+    main{
+        max-width: 100%;
+    }
+
+    .guitar-small-section{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .guitar-small:first-of-type{
+        grid-column: span 1;
+    }
+
+
+
+
+} /* end 1400 */
+
+
+@media screen and (min-width: 1100px) {
+
+    .section-title{
+        grid-column:1;
+    }
+
+    .guitar-small-section{
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    .guitar-small:first-of-type{
+        grid-column:span 1;
+    }
+
+
+}

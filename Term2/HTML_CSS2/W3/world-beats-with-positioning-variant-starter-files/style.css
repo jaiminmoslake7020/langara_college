@@ -1,0 +1,226 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "noto srif", Georgia, "Times New Roman", "Bitstream Charter", Times, serif;
+}
+
+header{
+    background-color: black;
+    color: white;
+}
+
+h1{
+    margin-top: 0;
+}
+
+.site-title{
+    font-family: Georgia, "Times New Roman", "Bitstream Charter", Times, serif;
+    font-size: 3rem;
+    text-transform: lowercase;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 0;
+}
+
+.site-title span{
+    font-family: 'Work Sans', sans-serif, "arial condensed",Helvetica;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2em !important;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*Navigation*/
+.menu-wrapper{
+
+}
+
+nav ul{
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: .875rem;
+    text-transform: uppercase;
+    font-family: "work sans","sans-serif";
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: block;
+    padding: .5rem;
+
+}
+
+.menu-main{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+nav a:hover{
+    background-color: firebrick;
+    color: white;
+}
+
+nav .menu-social-search{
+    display: flex;
+    justify-content: center;
+}
+
+.feature-image{
+    background-color: black;
+    border-top:1px solid white ;
+}
+
+.feature-image-inner-wrapper{
+    max-width: 1400px;
+    margin: auto;
+}
+
+/*MAIN CONTENT=============*/
+
+.feature-bio{
+    text-align: center;
+}
+
+.feature-bio-img{
+    border-radius: 50%;
+    max-width: 180px;
+}
+
+.feature-article{
+    padding: 1rem 2%;
+}
+
+.feature-article p{
+    line-height: 1.5;
+}
+
+
+/* NEW RELEASES */
+.new-releases{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: .5rem;
+    padding: .5rem;
+}
+
+/* ABSOLUTE POSITIONAING positions in relations to its nearest relative positioned ancestor */
+.new-releases h3{
+    position: absolute;
+    top:0;
+    color: white;
+}
+
+.new-releases article{
+    position: relative;
+}
+
+.new-releases h3{
+    margin-top: 0;
+    background-color: rgba(0,0,0,0.7);
+    left: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.section-title{
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+
+/*UTILITY CLASSS*/
+
+.visually-hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap; /* added line */
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 800px){
+
+    h1.site-title{
+        /*    POSITION RELATIVE positions an element with respect to its normal flow */
+        position: relative;
+        font-size: 6rem;
+        top:-5.5rem;
+    }
+
+    .article-aside-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .feature-article{
+        position: relative;
+        top:-3rem;
+        margin-left: 2%;
+        margin-right: 2%;
+        border-top-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+        background-color: white;
+    }
+
+    .feature-article h2{
+        margin-top: 0;
+    }
+
+    aside{
+        grid-column: 1;
+        grid-row: 1;
+        /*align-self: center;*/
+
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+
+    }
+}
+
+@media screen and (min-width: 1000px){
+
+    .menu-wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+}
+
+/* MEDIA QUERIES END */
+
+
+body.category.category-sports  .archive-header .taxonomy-description:p{
+    font-size: 2.5rem;
+}
+
+
+body.category article.post header.entry-header,
+body.category article.post div.entry-content,
+body.category article.post footer.entry-meta{
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    position: relative;
+    top:-100px;
+}
+
+
+[yop_poll id="1"]

@@ -1,0 +1,177 @@
+********************************************************************************
+* DUPLICATOR-PRO: Install-Log
+* STEP-1 START @ 07:25:55
+* VERSION: 1.3.12
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+PACKAGE INFO_ CURRENT SERVER                                | ORIGINAL SERVER
+PHP VERSION__:7.2.10                                        | 7.3.7
+OS___________:Darwin                                        | Darwin
+CREATED______:2019-05-15 20:55:07
+WP VERSION___:5.2
+DUP VERSION__:1.3.12
+DB___________:5.7.23
+DB TABLES____:13
+DB ROWS______:971
+DB FILE SIZE_:2.44MB
+********************************************************************************
+PHP:		7.3.7 | SAPI: apache2handler
+PHP MEMORY:	"4294967296" | SUHOSIN: "disabled"
+SERVER:		"Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.3.7 mod_ssl/2.2.34 OpenSSL/1.0.2o DAV/2 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.10 Perl/v5.24.0"
+DOC ROOT:	"/Applications/MAMP/htdocs/study/langara_college/Term2/CMS/W3/wp-configuration-exercise"
+DOC ROOT 755:	true
+LOG FILE 644:	true
+REQUEST URL:	"http://localhost/study/langara_college/Term2/CMS/W3/wp-configuration-exercise/dup-installer/main.installer.php"
+SAFE MODE :	"0"
+CONFIG MODE :	"NEW"
+--------------------------------------
+PRE-EXTRACT-CHECKS
+--------------------------------------
+- PASS: Apache '.htaccess' not found - no backup needed.
+- PASS: Microsoft IIS 'web.config' not found - no backup needed.
+- PASS: WordFence '.user.ini' not found - no backup needed.
+--------------------------------------
+ARCHIVE SETUP
+--------------------------------------
+NAME:	20190515_wp_config_exercise2019_801b50de61a3e2bc3261_20190515205507_archive.zip
+SIZE:	33.59MB
+
+ZIP:	Shell Exec Unzip
+>>> Starting Shell-Exec Unzip:
+Command: unzip -o -qq '/Applications/MAMP/htdocs/study/langara_college/Term2/CMS/W3/wp-configuration-exercise/20190515_wp_config_exercise2019_801b50de61a3e2bc3261_20190515205507_archive.zip' -d '/Applications/MAMP/htdocs/study/langara_college/Term2/CMS/W3/wp-configuration-exercise' 2>&1
+<<< Shell-Exec Unzip Complete.
+--------------------------------------
+POST-EXTACT-CHECKS
+--------------------------------------
+PERMISSION UPDATES:
+    -DIRS:  '755'
+    -FILES: '644'
+
+STEP-1 COMPLETE @ 07:26:00 - RUNTIME: 4.8811 sec.
+
+
+
+********************************************************************************
+* DUPLICATOR-LITE INSTALL-LOG
+* STEP-2 START @ 07:28:17
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+--------------------------------------
+DATABASE-ENVIRONMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 5.7.26 -- Build Server: 5.7.23
+FILE SIZE:	dup-database__801b50d-15205507.sql (817.3KB)
+TIMEOUT:	5000
+MAXPACK:	268435456
+SQLMODE:	STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+NEW SQL FILE:	[/Applications/MAMP/htdocs/study/langara_college/Term2/CMS/W3/wp-configuration-exercise/dup-installer/dup-installer-data__801b50d-15205507.sql]
+COLLATE FB:	Off
+[PHP ERR][WARN] MSG:count(): Parameter must be an array or an object that implements Countable [CODE:2|FILE:/Applications/MAMP/htdocs/study/langara_college/Term2/CMS/W3/wp-configuration-exercise/dup-installer/ctrls/ctrl.s2.dbinstall.php|LINE:386]
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+DB VIEWS:	enabled
+DB PROCEDURES:	enabled
+ERRORS FOUND:	0
+DROPPED TABLES:	0
+RENAMED TABLES:	0
+QUERIES RAN:	920
+
+wp_commentmeta: (0)
+wp_comments: (0)
+wp_duplicator_packages: (0)
+wp_links: (0)
+wp_options: (128)
+wp_postmeta: (228)
+wp_posts: (177)
+wp_term_relationships: (194)
+wp_term_taxonomy: (38)
+wp_termmeta: (0)
+wp_terms: (38)
+wp_usermeta: (74)
+wp_users: (5)
+Removed '22' cache/transient rows
+
+INSERT DATA RUNTIME: 6.4654 sec.
+STEP-2 COMPLETE @ 07:28:23 - RUNTIME: 6.7384 sec.
+
+
+
+********************************************************************************
+DUPLICATOR-LITE INSTALL-LOG
+STEP-3 START @ 07:28:47
+NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	utf8
+CHARSET CLIENT:	utf8
+
+--------------------------------------
+SERIALIZER ENGINE
+[*] scan every column
+[~] scan only text columns
+[^] no searchable columns
+--------------------------------------
+wp_commentmeta^ (0)
+wp_comments^ (0)
+wp_duplicator_packages^ (0)
+wp_links^ (0)
+wp_options~ (128)
+wp_postmeta~ (228)
+wp_posts~ (177)
+wp_term_relationships~ (194)
+wp_term_taxonomy~ (38)
+wp_termmeta^ (0)
+wp_terms~ (38)
+wp_usermeta~ (74)
+wp_users~ (5)
+--------------------------------------
+Search1:	'/Applications/MAMP/htdocs/wp-2019/fishy' 
+Change1:	'/Applications/MAMP/htdocs/study/langara_college/Term2/CMS/W3/wp-configuration-exercise' 
+Search2:	'\/Applications\/MAMP\/htdocs\/wp-2019\/fishy' 
+Change2:	'\/Applications\/MAMP\/htdocs\/study\/langara_college\/Term2\/CMS\/W3\/wp-configuration-exercise' 
+Search3:	'%2FApplications%2FMAMP%2Fhtdocs%2Fwp-2019%2Ffishy%2F' 
+Change3:	'%2FApplications%2FMAMP%2Fhtdocs%2Fstudy%2Flangara_college%2FTerm2%2FCMS%2FW3%2Fwp-configuration-exercise%2F' 
+Search4:	'\Applications\MAMP\htdocs\wp-2019\fishy' 
+Change4:	'/Applications/MAMP/htdocs/study/langara_college/Term2/CMS/W3/wp-configuration-exercise' 
+Search5:	'\\Applications\\MAMP\\htdocs\\wp-2019\\fishy' 
+Change5:	'\/Applications\/MAMP\/htdocs\/study\/langara_college\/Term2\/CMS\/W3\/wp-configuration-exercise' 
+Search6:	'%5CApplications%5CMAMP%5Chtdocs%5Cwp-2019%5Cfishy' 
+Change6:	'%2FApplications%2FMAMP%2Fhtdocs%2Fstudy%2Flangara_college%2FTerm2%2FCMS%2FW3%2Fwp-configuration-exercise' 
+Search7:	'//localhost:8888/wp-2019/fishy' 
+Change7:	'//localhost:8888/study/langara_college/Term2/CMS/W3/wp-configuration-exercise' 
+Search8:	'\/\/localhost:8888\/wp-2019\/fishy' 
+Change8:	'\/\/localhost:8888\/study\/langara_college\/Term2\/CMS\/W3\/wp-configuration-exercise' 
+Search9:	'%2F%2Flocalhost%3A8888%2Fwp-2019%2Ffishy' 
+Change9:	'%2F%2Flocalhost%3A8888%2Fstudy%2Flangara_college%2FTerm2%2FCMS%2FW3%2Fwp-configuration-exercise' 
+Search10:	'https://localhost' 
+Change10:	'http://localhost' 
+Search11:	'https:\/\/localhost' 
+Change11:	'http:\/\/localhost' 
+Search12:	'https%3A%2F%2Flocalhost' 
+Change12:	'http%3A%2F%2Flocalhost' 
+SCANNED:	Tables:13 	|	 Rows:882 	|	 Cells:6803 
+UPDATED:	Tables:2 	|	 Rows:5 	|	 Cells:5 
+ERRORS:		0 
+RUNTIME:	0.688900 sec
+
+====================================
+CONFIGURATION FILE UPDATES:
+====================================
+
+UPDATED WP-CONFIG ARK FILE:
+ - '/Applications/MAMP/htdocs/study/langara_college/Term2/CMS/W3/wp-configuration-exercise/wp-config.php'
+- PASS: Successfully created a new .htaccess file.
+- PASS: Existing Apache 'htaccess.orig' was removed
+- PASS: Existing Microsoft IIS 'web.config.orig' was removed
+
+====================================
+NOTICES
+====================================
+
+No General Notices Found
+
+FINAL REPORT NOTICES
+
+STEP-3 COMPLETE @ 07:28:48 - RUNTIME: 1.1164 sec. 
+
+

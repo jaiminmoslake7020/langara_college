@@ -1,0 +1,45 @@
+body{
+    min-height: 100vh;
+    margin: 50px;
+    padding: 0;
+}
+
+.parent{
+    display: flex;
+    /*align-items: flex-end;*/
+    border: 10px solid salmon;
+    height: 100vh;
+    box-sizing: border-box;
+
+    /* FLEX DIRECTION AND FLEX WRAP  */
+    flex-flow: row wrap;
+}
+
+.child{
+    border: 2px solid black;
+    flex-grow: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*.child1{*/
+/*    flex-grow: 3;*/
+/*}*/
+
+/*.child3{*/
+/*    flex-basis: 50%;*/
+/*    flex-grow: 0;*/
+/*}*/
+
+.child5{
+    /* SHORTHAND grow shrink basis */
+    flex: 0 0 50%;
+    order: -1;
+}
+
+.child:nth-of-type(3n+4){
+    background-color: hotpink;
+}
+

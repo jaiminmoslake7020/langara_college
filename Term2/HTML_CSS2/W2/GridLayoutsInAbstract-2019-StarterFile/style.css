@@ -1,0 +1,462 @@
+body ul.wrapper, body ul.poems{
+    display: none;
+}
+
+/*A menu is on the far left. The menu area is 40px wide. The main area, to the right of the menu, looks empty at page load.*/
+body{
+    display: grid;
+    grid-template-columns: 40px auto;
+    background-color: #2f466e;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/*A menu is on the far left. The menu area is 40px wide. The main area, to the right of the menu, looks empty at page load.*/
+body nav{
+    background-color: #1f2439;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+body nav button{
+    background-color: #b5c2d3;
+    border-radius: 10px;
+    font-size: 8px;
+    padding: 5px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+body nav button:hover{
+    background-color: rgba(195, 114, 0, 0.48);
+    color: white;
+}
+
+body nav button.active{
+    background-color: rgba(195, 114, 0, 0.48);
+    color: white;
+}
+
+/* I have made a simple change in JS to have a class from-all-layouts after a nav button click */
+/*All the layouts involve a grid relationship between the parent UL and its children*/
+body.from-all-layouts ul{
+    display: grid;
+    list-style-type: none;
+}
+
+body ul{
+    padding: 0;
+    margin: 0;
+}
+
+body ul li{
+    color: white;
+    background-color: #35507b;
+    padding: 10px;
+}
+
+/*All layouts, except for number 14, have 1 rem of space between each list item.*/
+body.from-all-layouts:not(.example14-active) ul{
+    grid-gap: 1rem;
+}
+
+/*All layouts, except for number 13 and maybe number 12, take the full width and height of the browser window (minus the sidebar navigation area).*/
+body.from-all-layouts:not(.example13-active),
+body.from-all-layouts:not(.example12-active)
+{
+    width: 100vw;
+    height: 100vh;
+}
+
+body.from-all-layouts:not(.example13-active) ul,
+body.from-all-layouts:not(.example12-active) ul{
+    width: auto;
+    height: 100vh;
+}
+
+/*Layouts 1 – 16 use the UL with a class of wrapper.*/
+/*Only one UL is visible at a time.*/
+body.from-all-layouts.example17-active ul.wrapper,
+body.from-all-layouts.example18-active ul.wrapper,
+body.from-all-layouts.example19-active ul.wrapper{
+    display: none;
+}
+
+/*Layouts 17 – 19 use the UL with a class of poems.*/
+/*Only one UL is visible at a time.*/
+body.from-all-layouts.example1-active ul.poems,
+body.from-all-layouts.example2-active ul.poems,
+body.from-all-layouts.example3-active ul.poems,
+body.from-all-layouts.example4-active ul.poems,
+body.from-all-layouts.example5-active ul.poems,
+body.from-all-layouts.example6-active ul.poems,
+body.from-all-layouts.example7-active ul.poems,
+body.from-all-layouts.example8-active ul.poems,
+body.from-all-layouts.example9-active ul.poems,
+body.from-all-layouts.example10-active ul.poems,
+body.from-all-layouts.example11-active ul.poems,
+body.from-all-layouts.example12-active ul.poems,
+body.from-all-layouts.example13-active ul.poems,
+body.from-all-layouts.example14-active ul.poems,
+body.from-all-layouts.example15-active ul.poems,
+body.from-all-layouts.example16-active ul.poems
+{
+    display: none;
+}
+
+/*
+Example 1:
+Four equal-height rows, five equal-width columns.
+ */
+body.example1-active ul.wrapper{
+  grid-template-rows: repeat(4,1fr);
+  grid-template-columns: repeat(5,1fr);
+}
+
+/*
+    Example 2
+    Five rows, four columns
+    First column is always 300px; other columns vary with browser width
+    I did it as per text screen shows it different
+*/
+body.example2-active ul.wrapper{
+    grid-template-rows: repeat(5,auto);
+    grid-template-columns: 300px 1fr 1fr 1fr;
+}
+
+/* As per picture */
+/*body.example2-active ul.wrapper{*/
+/*    grid-template-rows: repeat(4,auto);*/
+/*    grid-template-columns: 300px 1fr 1fr 1fr 1fr;*/
+/*}*/
+
+/*
+    Example 3
+    Seven rows, three columns
+    First and last columns are 300px; middle column varies with browser width.
+*/
+body.example3-active ul.wrapper{
+    grid-template-rows: repeat(7,auto);
+    grid-template-columns: 300px 1fr 300px;
+}
+
+
+/*
+    Example 4
+    Three rows, seven columns. First row is 3x the height of other rows. Columns are equal width.
+*/
+body.example4-active ul.wrapper{
+    grid-template-rows: 3fr 1fr 1fr;
+    grid-template-columns: repeat(7,auto);
+}
+
+/*
+    Example 5
+    Four rows, seven columns. First item in row 1 covers four columns
+*/
+body.example5-active ul.wrapper{
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(7,1fr);
+}
+
+body.example5-active ul.wrapper li:first-of-type{
+    grid-column: 1/5;
+    background-color: #8591ad;;
+}
+
+/*
+    Example 6
+    Four rows, seven columns. Last item in row 1 covers four columns
+*/
+body.example6-active ul.wrapper{
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(7,1fr);
+}
+
+body.example6-active ul.wrapper li:nth-of-type(4){
+    grid-column: 4/-1;
+    background-color: #8591ad;;
+}
+
+/*
+    Example 7
+    First item in row 1 covers four rows
+*/
+body.example7-active ul.wrapper{
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(7,1fr);
+}
+
+body.example7-active ul.wrapper li:nth-of-type(1){
+    grid-row: 1/-1;
+    background-color: #8591ad;;
+}
+
+/*
+    Example 8
+    First item in row 1 covers four rows and two columns
+*/
+body.example8-active ul.wrapper{
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(7,1fr);
+}
+
+body.example8-active ul.wrapper li:nth-of-type(1){
+    grid-row: 1/-1;
+    grid-column: 1/3;
+    background-color: #8591ad;;
+}
+
+/*
+    Example 9
+    Item number 1 appears at the end of row 2.
+*/
+body.example9-active ul.wrapper{
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(7,1fr);
+}
+
+body.example9-active ul.wrapper li:nth-of-type(1){
+    grid-row: 2/3;
+    grid-column: 7/-1;
+    background-color: #8591ad;;
+}
+
+/*
+    Example 10
+    Item number 1 takes up two rows and two columns from the right edge of the wrapper.
+*/
+body.example10-active ul.wrapper{
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(7,1fr);
+}
+
+body.example10-active ul.wrapper li:nth-of-type(1){
+    grid-row: 1/3;
+    grid-column: 6/-1;
+    background-color: #8591ad;;
+}
+
+/*
+    Example 11
+    Item number 1 takes up three columns in the middle of the entire wrapper.
+    Remember: no changes to the HTML.
+*/
+body.example11-active ul.wrapper{
+    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: repeat(7,1fr);
+}
+
+body.example11-active ul.wrapper li:nth-of-type(1){
+    grid-row: 1/-1;
+    grid-column: 3/6;
+    background-color: #8591ad;;
+}
+
+/*
+    Example 12
+    3 columns, equal width.
+    7 rows. Row 2 is 1/2 the height of row 1, and 1/3 the height of row 3.
+    That pattern continues with rows 4,5, & 6.
+    But the last row does not continue the pattern: the only thing determining its height will be the content itself.
+*/
+body.example12-active ul.wrapper{
+    grid-template-rows: 2fr 1fr 3fr 2fr 1fr 3fr auto;
+    grid-template-columns: repeat(3,1fr);
+}
+
+
+/*
+    Example 13
+    Four columns. Each is an equal width, but each one never gets smaller than 200px or bigger than 400px.
+    Hint: requires minmax()
+*/
+body.example13-active ul.wrapper{
+    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: repeat(4,minmax(200px,400px));
+}
+
+/*
+    Example 14
+    4 rows, 5 columns.
+    Only the first 10 LIs are visible.
+    Content forms a checkerboard pattern.
+*/
+
+body.example14-active ul.wrapper{
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(5,1fr);
+}
+
+body.example14-active ul.wrapper li:nth-of-type(1n+11)
+{
+    display: none;
+}
+
+body.example14-active ul.wrapper li:nth-of-type(5n+3){
+    grid-column: 1/2;
+}
+
+body.example14-active ul.wrapper li:nth-of-type(5n+1){
+    grid-column: 2/3;
+}
+
+body.example14-active ul.wrapper li:nth-of-type(5n+4){
+    grid-column: 3/4;
+}
+
+body.example14-active ul.wrapper li:nth-of-type(5n+2){
+    grid-column: 4/5;
+}
+
+body.example14-active ul.wrapper li:nth-of-type(5n+5){
+    grid-column: 5/6;
+}
+
+body.example14-active ul.wrapper li:nth-of-type(1),
+body.example14-active ul.wrapper li:nth-of-type(2){
+    grid-row: 1/2;
+}
+
+body.example14-active ul.wrapper li:nth-of-type(3),
+body.example14-active ul.wrapper li:nth-of-type(4),
+body.example14-active ul.wrapper li:nth-of-type(5){
+    grid-row: 2/3;
+}
+
+body.example14-active ul.wrapper li:nth-of-type(6),
+body.example14-active ul.wrapper li:nth-of-type(7){
+    grid-row: 3/4;
+}
+
+body.example14-active ul.wrapper li:nth-of-type(8),
+body.example14-active ul.wrapper li:nth-of-type(9),
+body.example14-active ul.wrapper li:nth-of-type(10){
+    grid-row: 4/5;
+}
+
+/*
+    Example 15
+    Same layout as example 14, but item number is in top right of box.
+*/
+body.example15-active ul.wrapper{
+    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: repeat(4,1fr);
+}
+
+body.example15-active ul.wrapper li{
+    display: grid;
+    justify-content: right;
+}
+
+/*
+    Example 16
+    Same layout as example 15, but text is in the horizontal and vertical center of the box.
+*/
+body.example16-active ul.wrapper{
+    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: repeat(4,1fr);
+}
+
+body.example16-active ul.wrapper li{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+/*For layouts 17-20, use the UL with a class of poem as your grid parent.*/
+
+/*
+    Example 17
+    Style it like in the screenshot. Don’t worry that the text is different than in the text in the screenshot.
+    Make the number be in the top left corner and the text be in the bottom left corner.
+*/
+body.example17-active ul.poems{
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);
+}
+
+body.example17-active ul.poems li{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+}
+
+body.example17-active ul.poems li div.poem-number{
+    align-self: start;
+    font-size: 2em;
+}
+
+body.example17-active ul.poems li div.poem-text{
+    align-self: end;
+}
+
+
+/*
+    Example 18
+    Lay it out like in the screenshot. Do not push the content down with margin or padding. It needs to be vertically centered, but not horizontally.
+*/
+body.example18-active ul.poems{
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);
+    align-content: center;
+}
+
+body.example18-active ul.poems li{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    grid-gap: 5px;
+}
+
+body.example18-active ul.poems li div.poem-number{
+    display: grid;
+    align-self: center;
+    font-size: 5em;
+    justify-self: start;
+    color: #8591ad;
+}
+
+body.example18-active ul.poems li div.poem-text{
+    display: grid;
+    align-self: center;
+    justify-self: left;
+    color: #cee1f6;
+}
+
+
+/*
+    Example 19
+    Lay it out like in the screenshot
+    Modify the design so that the item number has a light background.
+    Have the number text centered vertically and horizontally in its box.
+*/
+body.example19-active ul.poems{
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);
+    align-content: center;
+}
+
+body.example19-active ul.poems li{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    grid-gap: 10px;
+}
+
+body.example19-active ul.poems li div.poem-number{
+    display: grid;
+    font-size: 5em;
+    background-color: #8591ad;
+    width: 100%;
+    color: #343944;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+}
+
+body.example19-active ul.poems li div.poem-text{
+    display: grid;
+    align-self: center;
+    justify-self: left;
+    color: #cee1f6;
+}
