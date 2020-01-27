@@ -8,6 +8,7 @@ header{
     display: flex;
     flex-flow: row wrap;
     box-sizing: border-box;
+    margin-bottom: 20px;
 }
 
 header nav{
@@ -163,6 +164,45 @@ main article{
 
 }
 
-@media screen and (min-width:1062px)  {
+@media screen and (min-width:1250px)  {
+
+    main article{
+        flex-basis: 25%;
+    }
 
 }
+
+article{
+    position: relative;
+    display: flex;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+article div{
+    flex-basis: 70%;
+}
+
+article p{
+    flex-basis: 20%;
+    display: inline-block;
+    background-color: white;
+    padding: 10px;
+    margin: 0;
+    padding-bottom: 0;
+    padding-top: 5px;
+}
+
+article h2{
+    position: absolute;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.71);
+    padding: 10px;
+    top:15px;
+    margin-top: 0;
+    left: 0;
+    width: 64%;
+    font-size: 18px;
+}
+
+
