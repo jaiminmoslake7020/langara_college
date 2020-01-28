@@ -126,17 +126,47 @@ main article{
         flex-basis: 50%;
     }
 
+    header h1{
+        flex-basis: 50%;
+        display: inline-block;
+        text-align: center;
+    }
+
+    header nav{
+        flex-basis: 46%;
+    }
+
+    header nav ul li:nth-of-type(6){
+        flex-basis: 100%;
+    }
+
+    header nav ul li:nth-of-type(6) a{
+        text-align: center;
+    }
+
 }
 
 @media screen and (min-width:900px)  {
 
+    header{
+        align-content: center;
+    }
+
     header h1{
-        flex-basis: 27%;
+        flex-basis: 50%;
         display: inline-block;
     }
 
     header nav{
-        flex-basis: 70%;
+        flex-basis: 46%;
+    }
+
+    header nav ul li:nth-of-type(6){
+        flex-basis: 100%;
+    }
+
+    header nav ul li:nth-of-type(6) a{
+        text-align: center;
     }
 
     footer nav ul li a{
@@ -179,9 +209,6 @@ main article{
         box-sizing: border-box;
     }
 
-    article div{
-    }
-
     article p{
         flex-basis: 20%;
         display: inline-block;
@@ -210,6 +237,7 @@ main article{
         5,6,7,8
         9,10,11,12
         13,14,15,16
+
 5,6,7,8
 13,14,15,16
 
@@ -238,7 +266,6 @@ main article{
     {
         background-color: lightgrey;
     }
-
 
 }
 
