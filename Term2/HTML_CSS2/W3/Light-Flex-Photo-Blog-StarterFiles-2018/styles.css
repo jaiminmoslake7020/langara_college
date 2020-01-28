@@ -109,13 +109,6 @@ main article{
     flex-basis: 100%;
 }
 
-@media screen and (min-width:380px)  {
-
-
-
-}
-
-
 @media screen and (min-width:664px)  {
     header nav ul li:nth-of-type(6){
         flex-basis: initial;
